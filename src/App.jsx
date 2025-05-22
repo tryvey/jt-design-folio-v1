@@ -87,7 +87,7 @@ function App() {
           </div>
           {/* Description (optional) */}
           {heroDesc && (
-            <div className="text-lg md:text-xl text-white/80 mb-4 max-w-xl text-center drop-shadow-lg">{heroDesc}</div>
+            <div className="text-lg md:text-xl text-white/90 mb-4 max-w-xl text-center drop-shadow-lg">{heroDesc}</div>
           )}
           {/* CTA (optional) */}
           {heroCta && (
@@ -99,34 +99,34 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section className="w-full bg-white text-neutral-900 py-16 px-4 md:px-0 max-w-6xl mx-auto">
+      <section className="w-full bg-neutral-950 text-white py-16 px-4 md:px-0 max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <div className="flex-1 mb-6 md:mb-0">
-            <div className="inline-block bg-neutral-200 text-neutral-700 rounded-full px-4 py-1 text-xs font-semibold mb-4">About us</div>
+            <div className="inline-block bg-neutral-800 text-white rounded-full px-4 py-1 text-xs font-semibold mb-4">About us</div>
             <h2 className="text-2xl md:text-3xl font-bold leading-tight mb-2">home improvement specialists</h2>
           </div>
-          <div className="flex-1 prose prose-neutral max-w-none">
+          <div className="flex-1 prose prose-invert max-w-none">
             <ReactMarkdown>{about}</ReactMarkdown>
           </div>
         </div>
       </section>
 
       {/* Case Studies Section */}
-      <section className="w-full bg-white py-16 px-4 md:px-0 max-w-6xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-neutral-900">Best Work</h2>
+      <section className="w-full bg-neutral-950 py-16 px-4 md:px-0 max-w-6xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-white">Best Work</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {caseStudies.map((cs, i) => (
-            <div key={i} className="bg-neutral-100 rounded-2xl shadow-lg overflow-hidden flex flex-col">
+            <div key={i} className="bg-neutral-900 rounded-2xl shadow-lg overflow-hidden flex flex-col">
               <img
                 src={cs.image}
                 alt={cs.title}
-                className="w-full aspect-square object-cover bg-neutral-300"
+                className="w-full aspect-square object-cover bg-neutral-800"
                 onError={e => (e.target.src = 'https://placehold.co/400x400?text=Case+Study')}
               />
               <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-lg font-bold mb-2 text-neutral-900">{cs.title}</h3>
-                <p className="text-neutral-700 flex-1">{cs.desc}</p>
-                <a href={cs.link} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block text-sm font-semibold text-neutral-700 hover:text-neutral-900 underline">View on Figma</a>
+                <h3 className="text-lg font-bold mb-2 text-white">{cs.title}</h3>
+                <p className="text-white/90 flex-1">{cs.desc}</p>
+                <a href={cs.link} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block text-sm font-semibold text-white/90 hover:text-white underline">View on Figma</a>
               </div>
             </div>
           ))}
@@ -134,8 +134,8 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-neutral-900 py-6 mt-12">
-        <div className="max-w-6xl mx-auto px-4 text-white/80">
+      <footer className="bg-neutral-950 py-6 mt-12">
+        <div className="max-w-6xl mx-auto px-4 text-white/90">
           <div className="prose prose-invert">
             <ReactMarkdown>{links}</ReactMarkdown>
           </div>

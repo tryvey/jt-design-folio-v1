@@ -13,7 +13,7 @@ module.exports = {
             },
             colors: {
                 neutral: {
-                    950: '#0a0a0a',
+                    950: '#000000', // Pure black
                     900: '#171717',
                     800: '#262626',
                 },
