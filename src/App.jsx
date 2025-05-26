@@ -3,6 +3,10 @@ import ReactMarkdown from 'react-markdown';
 import './App.css';
 import '@fontsource/inter';
 
+// ============================================================
+// Helper Functions
+// ============================================================
+
 const fetchMarkdown = async (path) => {
   const url = `${path}?t=${Date.now()}`;
   const res = await fetch(url);
@@ -12,14 +16,14 @@ const fetchMarkdown = async (path) => {
 
 // Helper to parse case studies from markdown
 function parseCaseStudies(md) {
-  // Split by ---
   return md
     .split('---')
     .map((block) => {
       const titleMatch = block.match(/### (.+)/);
       const imgMatch = block.match(/!\[[^\]]*\]\(([^)]+)\)/);
-      const descMatch = block.match(/\)\n([^\[]+)/);
+      const descMatch = block.match(/\)\n([^[]+)/);
       const linkMatch = block.match(/\[View on Figma\]\(([^)]+)\)/);
+
       return titleMatch && imgMatch && descMatch && linkMatch
         ? {
           title: titleMatch[1].trim(),
@@ -32,115 +36,245 @@ function parseCaseStudies(md) {
     .filter(Boolean);
 }
 
+// ============================================================
+// Component: HeroSection
+// ============================================================
+
+function HeroSection({ heroHeader, heroContent }) {
+  // Parse hero header
+  const headerLines = heroHeader.split('\n').filter(Boolean);
+  const headerTitle = headerLines[0]?.replace(/^## /, '') || '';
+
+  // Parse hero content
+  const contentLines = heroContent.split('\n').filter(Boolean);
+  const heroTitle = contentLines[0]?.replace(/^## /, '') || '';
+  const heroSubtitle = contentLines[1] || '';
+  const heroDesc = contentLines.slice(2, contentLines.length - 1).join(' ');
+  const heroCtaMatch = heroContent.match(/\[(.+)\]\(([^)]+)\)/);
+  const heroCta = heroCtaMatch ? { text: heroCtaMatch[1], href: heroCtaMatch[2] } : null;
+
+  // Handle smooth scrolling for anchor links
+  const handleScrollTo = (e) => {
+    // Only apply to internal anchor links
+    if (heroCta?.href.startsWith('#')) {
+      e.preventDefault();
+      const targetId = heroCta.href.substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
+  };
+
+  return (
+    <section
+      className="relative w-full min-h-screen flex items-center justify-center"
+      style={{
+        backgroundImage: 'url(/images/hero.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/70" aria-hidden="true"></div>
+
+      {/* Content - Three Row Layout */}
+      <div className="relative z-10 w-full min-h-screen flex flex-col justify-between px-4 py-12">
+
+        {/* Top Row - Logo */}
+        <div className="flex justify-center items-center pt-8">
+          <img
+            src="/images/JT-logo.svg"
+            alt="Logo"
+            className="w-48 md:w-56 lg:w-64"
+            style={{ maxWidth: '260px' }}
+          />
+        </div>
+
+        {/* Middle Row - Content */}
+        <div className="flex flex-col items-center justify-center text-center my-8">
+          {/* Header Title */}
+          <div className="text-2xl md:text-3xl font-bold mb-4 text-white drop-shadow-lg">
+            {headerTitle}
+          </div>
+
+          {/* Subtitle (main headline) */}
+          <div
+            className="text-3xl md:text-5xl font-extrabold leading-tight text-white mb-4 drop-shadow-lg"
+            style={{ maxWidth: '40rem' }}
+          >
+            {heroTitle}
+          </div>
+
+          {/* Secondary subtitle */}
+          <div className="text-2xl md:text-3xl font-bold mb-4 text-white drop-shadow-lg">
+            {heroSubtitle}
+          </div>
+
+          {/* Description (optional) */}
+          {heroDesc && (
+            <div className="text-lg md:text-xl text-white/90 mb-4 max-w-xl drop-shadow-lg">
+              {heroDesc}
+            </div>
+          )}
+        </div>
+
+        {/* Bottom Row - Scroll Anchor */}
+        <div className="flex justify-center items-center pb-8">
+          {/* CTA (scroll.svg as anchor link) */}
+          {heroCta && (
+            <a
+              href={heroCta.href}
+              onClick={handleScrollTo}
+              className="inline-block animate-bounce"
+              aria-label={heroCta.text}
+            >
+              <img
+                src="/scroll.svg"
+                alt={heroCta.text}
+                className="w-10 h-10"
+                style={{ filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.3))' }}
+              />
+            </a>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ============================================================
+// Component: AboutSection
+// ============================================================
+
+function AboutSection({ about }) {
+  return (
+    <section className="w-full bg-neutral-950 text-white py-16 px-4 md:px-0 max-w-6xl mx-auto">
+      <div className="flex flex-col">
+        <div className="prose prose-invert max-w-none">
+          <ReactMarkdown>{about}</ReactMarkdown>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ============================================================
+// Component: CaseStudiesSection
+// ============================================================
+
+function CaseStudiesSection({ caseStudies }) {
+  return (
+    <section className="w-full bg-white py-16 px-4 md:px-0 mx-auto">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-neutral-800">Case Studies</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {caseStudies.map((cs, i) => (
+            <a
+              key={i}
+              href={cs.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`block transition-transform hover:scale-[1.02] ${i === 0 ? 'sm:col-span-2' : ''}`}
+            >
+              <div
+                className="rounded-3xl flex items-center justify-center overflow-hidden"
+                style={{
+                  backgroundColor: getBrandColor(cs.title)
+                }}
+              >
+                <img
+                  src={cs.image}
+                  alt={cs.title}
+                  className="max-w-full max-h-full object-cover"
+                  style={{
+                    filter: cs.title.toLowerCase().includes('vision') ? 'none' : 'none',
+                    maxHeight: '45%'
+                  }}
+                />
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// Helper function to determine brand colors based on case study title
+function getBrandColor(title) {
+  const lowerTitle = title.toLowerCase();
+  if (lowerTitle.includes('open universities')) return '#4052B5';
+  if (lowerTitle.includes('marvel stadium')) return '#4D2230';
+  if (lowerTitle.includes('xero')) return '#13B5EA';
+  if (lowerTitle.includes('post') || lowerTitle.includes('australia post')) return '#000000';
+  if (lowerTitle.includes('vision') || lowerTitle.includes('apple')) return '#000000';
+  // Default color for other brands
+  return '#333333';
+}
+
+// ============================================================
+// Component: Footer
+// ============================================================
+
+function Footer({ links }) {
+  return (
+    <footer id="contact" className="bg-neutral-950 py-6 mt-12 scroll-mt-8 target:ring-2 target:ring-blue-500/50">
+      <div className="max-w-6xl mx-auto px-4 text-white/90">
+        <div className="prose prose-invert">
+          <ReactMarkdown>{links}</ReactMarkdown>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+// ============================================================
+// Main App Component
+// ============================================================
+
 function App() {
-  const [hero, setHero] = useState('');
+  // State for content from markdown files
+  const [heroHeader, setHeroHeader] = useState('');
+  const [heroContent, setHeroContent] = useState('');
   const [about, setAbout] = useState('');
   const [caseStudies, setCaseStudies] = useState([]);
   const [links, setLinks] = useState('');
 
+  // Fetch content from markdown files
   useEffect(() => {
     const loadAll = async () => {
-      const h = await fetchMarkdown('/content/hero.md');
+      const hh = await fetchMarkdown('/content/hero-header.md');
+      const hc = await fetchMarkdown('/content/hero-content.md');
       const a = await fetchMarkdown('/content/about.md');
       const c = await fetchMarkdown('/content/case-studies.md');
       const l = await fetchMarkdown('/content/links.md');
-      setHero(h);
+
+      setHeroHeader(hh);
+      setHeroContent(hc);
       setAbout(a);
       setCaseStudies(parseCaseStudies(c));
       setLinks(l);
     };
+
     loadAll();
+
+    // Set up live reload
     const interval = setInterval(loadAll, 1000);
     return () => clearInterval(interval);
   }, []);
 
-  // Parse hero content
-  const heroLines = hero.split('\n').filter(Boolean);
-  const heroTitle = heroLines[0]?.replace(/^# /, '') || '';
-  const heroSubtitle = heroLines[1] || '';
-  const heroDesc = heroLines.slice(2, heroLines.length - 1).join(' ');
-  const heroCtaMatch = hero.match(/\[(.+)\]\(([^)]+)\)/);
-  const heroCta = heroCtaMatch ? { text: heroCtaMatch[1], href: heroCtaMatch[2] } : null;
-
   return (
     <div className="font-sans bg-neutral-950 text-white min-h-screen">
-      {/* Hero Section with background image, overlay, centered content, and logo */}
-      <section
-        className="relative w-full min-h-screen flex items-center justify-center"
-        style={{
-          backgroundImage: 'url(/images/hero.png)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/70" aria-hidden="true"></div>
-        {/* Content */}
-        <div className="relative z-10 w-full flex flex-col items-center justify-center px-4 py-12">
-          {/* Logo */}
-          <img src="/images/JT-logo.svg" alt="Logo" className="mb-10 w-48 md:w-56 lg:w-64 mx-auto" style={{ maxWidth: '260px' }} />
-          {/* Title */}
-          <div className="text-2xl md:text-3xl font-bold mb-8 text-white text-center drop-shadow-lg">{heroTitle}</div>
-          {/* Subtitle (main headline) */}
-          <div className="text-3xl md:text-5xl font-extrabold leading-tight text-white mb-4 text-center drop-shadow-lg" style={{ maxWidth: '40rem' }}>
-            {heroSubtitle}
-          </div>
-          {/* Description (optional) */}
-          {heroDesc && (
-            <div className="text-lg md:text-xl text-white/90 mb-4 max-w-xl text-center drop-shadow-lg">{heroDesc}</div>
-          )}
-          {/* CTA (optional) */}
-          {heroCta && (
-            <a href={heroCta.href} className="inline-block bg-white text-neutral-950 rounded-full px-6 py-2 font-semibold shadow hover:bg-neutral-200 transition w-max mt-4">
-              {heroCta.text}
-            </a>
-          )}
-        </div>
-      </section>
 
-      {/* About Section */}
-      <section className="w-full bg-neutral-950 text-white py-16 px-4 md:px-0 max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row gap-8 items-start">
-          <div className="flex-1 mb-6 md:mb-0">
-            <div className="inline-block bg-neutral-800 text-white rounded-full px-4 py-1 text-xs font-semibold mb-4">About us</div>
-            <h2 className="text-2xl md:text-3xl font-bold leading-tight mb-2">home improvement specialists</h2>
-          </div>
-          <div className="flex-1 prose prose-invert max-w-none">
-            <ReactMarkdown>{about}</ReactMarkdown>
-          </div>
-        </div>
-      </section>
-
-      {/* Case Studies Section */}
-      <section className="w-full bg-neutral-950 py-16 px-4 md:px-0 max-w-6xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-white">Best Work</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {caseStudies.map((cs, i) => (
-            <div key={i} className="bg-neutral-900 rounded-2xl shadow-lg overflow-hidden flex flex-col">
-              <img
-                src={cs.image}
-                alt={cs.title}
-                className="w-full aspect-square object-cover bg-neutral-800"
-                onError={e => (e.target.src = 'https://placehold.co/400x400?text=Case+Study')}
-              />
-              <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-lg font-bold mb-2 text-white">{cs.title}</h3>
-                <p className="text-white/90 flex-1">{cs.desc}</p>
-                <a href={cs.link} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block text-sm font-semibold text-white/90 hover:text-white underline">View on Figma</a>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-neutral-950 py-6 mt-12">
-        <div className="max-w-6xl mx-auto px-4 text-white/90">
-          <div className="prose prose-invert">
-            <ReactMarkdown>{links}</ReactMarkdown>
-          </div>
-        </div>
-      </footer>
+      <HeroSection heroHeader={heroHeader} heroContent={heroContent} />
+      <AboutSection about={about} />
+      <CaseStudiesSection caseStudies={caseStudies} />
+      <Footer links={links} />
     </div>
   );
 }

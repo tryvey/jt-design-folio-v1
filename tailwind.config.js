@@ -1,11 +1,13 @@
-const typography = require('@tailwindcss/typography');
+import typography from '@tailwindcss/typography';
 
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
     content: [
         "./index.html",
         "./src/**/*.{js,jsx,ts,tsx}",
         "./public/content/**/*.md"
     ],
+    plugins: [typography],
     theme: {
         extend: {
             fontFamily: {
@@ -20,5 +22,4 @@ module.exports = {
             },
         },
     },
-    plugins: [typography],
 };

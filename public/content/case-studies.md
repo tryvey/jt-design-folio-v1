@@ -1,23 +1,39 @@
 ## Case Studies
 
-### Open Universities Design System
+### Open Universities Australia
 
-![Modern Kitchen](/images/case1.jpg)
-A stunning transformation of a family kitchen, blending modern design with practical functionality.
+![Open Universities Australia](/case-studies/ou-tile.png)
+Design system development and digital transformation
 [View on Figma](https://www.figma.com/)
 
 ---
 
 ### Marvel Stadium
 
-![Scandinavian Living Room](/images/case2.jpg)
-A cozy and bright living space inspired by Scandinavian minimalism and comfort.
+![Marvel Stadium](/case-studies/marvelstadium.png)
+App design for digital food ordering system
 [View on Figma](https://www.figma.com/)
 
 ---
 
-### Xero Go
+### Australia Post
 
-![Creative Home Office](/images/case3.jpg)
-A productive and inspiring workspace designed for creativity and focus.
+![Australia Post](/case-studies/auspost.png)
+Digital experience for parcel tracking and delivery
+[View on Figma](https://www.figma.com/)
+
+---
+
+### Xero
+
+![Xero](/case-studies/xero.png)
+Mobile application UX/UI for small business accounting
+[View on Figma](https://www.figma.com/)
+
+---
+
+### Apple Vision Pro
+
+![Apple Vision Pro](/case-studies/vision-pro.png)
+Spatial computing experience prototyping
 [View on Figma](https://www.figma.com/)
