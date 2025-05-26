@@ -104,7 +104,7 @@ function HeroSection({ heroHeader, heroContent }) {
 
           {/* Subtitle (main headline) */}
           <div
-            className="text-3xl md:text-5xl font-extrabold leading-tight text-white mb-4 drop-shadow-lg"
+            className="text-2xl md:text-3xl font-bold leading-tight text-white mb-4 drop-shadow-lg"
             style={{ maxWidth: '40rem' }}
           >
             {heroTitle}
@@ -117,7 +117,7 @@ function HeroSection({ heroHeader, heroContent }) {
 
           {/* Description (optional) */}
           {heroDesc && (
-            <div className="text-lg md:text-xl text-white/90 mb-4 max-w-xl drop-shadow-lg">
+            <div className="text-2xl md:text-3xl font-bold text-white/90 mb-4 max-w-xl drop-shadow-lg">
               {heroDesc}
             </div>
           )}
