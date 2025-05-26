@@ -51,7 +51,7 @@ function HeroSection({ heroHeader, heroContent }) {
   const heroSubtitle = contentLines[1] || '';
   const heroDesc = contentLines.slice(2, contentLines.length - 1).join(' ');
   const heroCtaMatch = heroContent.match(/\[(.+)\]\(([^)]+)\)/);
-  const heroCta = heroCtaMatch ? { text: heroCtaMatch[1], href: heroCtaMatch[2] } : null;
+  const heroCta = heroCtaMatch ? { text: heroCtaMatch[1], href: '#projects' } : null;
 
   // Handle smooth scrolling for anchor links
   const handleScrollTo = (e) => {
@@ -169,7 +169,7 @@ function AboutSection({ about }) {
 
 function CaseStudiesSection({ caseStudies }) {
   return (
-    <section className="w-full bg-white py-16 px-4 md:px-0 mx-auto">
+    <section id="projects" className="w-full bg-white py-16 px-4 md:px-0 mx-auto">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-neutral-800">Case Studies</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -221,12 +221,34 @@ function getBrandColor(title) {
 // Component: Footer
 // ============================================================
 
-function Footer({ links }) {
+function Footer({ name, footerLinks, copyrightText }) {
   return (
-    <footer id="contact" className="bg-neutral-950 py-6 mt-12 scroll-mt-8 target:ring-2 target:ring-blue-500/50">
-      <div className="max-w-6xl mx-auto px-4 text-white/90">
-        <div className="prose prose-invert">
-          <ReactMarkdown>{links}</ReactMarkdown>
+    <footer id="contact" className="bg-neutral-950 py-12 mt-12 scroll-mt-8 target:ring-2 target:ring-blue-500/50 text-white/90 text-center">
+      <div className="max-w-6xl mx-auto px-4">
+        {/* Name */}
+        <div className="text-xl font-bold mb-4">{name}</div>
+
+        {/* Links */}
+        <div className="mb-4">
+          {footerLinks && footerLinks.map((link, index) => (
+            <>
+              <a
+                key={index}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                {link.text}
+              </a>
+              {index < footerLinks.length - 1 && <span className="mx-2">•</span>}
+            </>
+          ))}
+        </div>
+
+        {/* Copyright */}
+        <div className="text-sm">
+          {copyrightText}
         </div>
       </div>
     </footer>
@@ -243,7 +265,9 @@ function App() {
   const [heroContent, setHeroContent] = useState('');
   const [about, setAbout] = useState('');
   const [caseStudies, setCaseStudies] = useState([]);
-  const [links, setLinks] = useState('');
+
+  // Add new state for footer content
+  const [footerLinks, setFooterLinks] = useState([]);
 
   // Fetch content from markdown files
   useEffect(() => {
@@ -258,7 +282,18 @@ function App() {
       setHeroContent(hc);
       setAbout(a);
       setCaseStudies(parseCaseStudies(c));
-      setLinks(l);
+
+      // Parse links from markdown for the new footer structure
+      const linkRegex = /-\s*\[(.+)\]\(([^)]+)\)/g;
+      const parsedLinks = [];
+      let match;
+      while ((match = linkRegex.exec(l)) !== null) {
+        parsedLinks.push({
+          text: match[1].trim(),
+          href: match[2].trim(),
+        });
+      }
+      setFooterLinks(parsedLinks);
     };
 
     loadAll();
@@ -274,7 +309,7 @@ function App() {
       <HeroSection heroHeader={heroHeader} heroContent={heroContent} />
       <AboutSection about={about} />
       <CaseStudiesSection caseStudies={caseStudies} />
-      <Footer links={links} />
+      <Footer name="Jamie Treyvaud" footerLinks={footerLinks} copyrightText="© 2025 Copyrights. All rights reserved." />
     </div>
   );
 }
