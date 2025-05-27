@@ -14,6 +14,9 @@ export const caseStudyFiles = {
 
 export default function WorkCaseStudyRoute() {
   const { slug } = useParams();
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
   const file = caseStudyFiles[slug];
   if (file) {
     return (
