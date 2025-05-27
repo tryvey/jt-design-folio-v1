@@ -62,3 +62,21 @@ If you are developing a production application, we recommend using TypeScript wi
 ---
 
 **Edit the markdown files in `/public/content` to update your site. No code changes needed!**
+
+## Build Process Updates
+
+The build process has been updated to properly handle content files:
+
+1. **Pre-build**: Content files are copied to the public directory
+2. **Build**: Vite builds the application
+3. **Post-build**: Content files are directly copied to the dist folder and removed from public
+
+Additionally, the following files were added for proper routing in production:
+- `public/_redirects` for Netlify deployments
+- `public/.htaccess` for Apache servers
+
+To test the build locally:
+```bash
+npm run build
+npm run preview
+```

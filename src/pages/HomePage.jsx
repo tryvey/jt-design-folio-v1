@@ -28,7 +28,7 @@ export async function getCaseStudiesFromFiles() {
   const studies = await Promise.all(
     files.map(async ({ slug, file }) => {
       const text = await fetchMarkdown(file);
-      const { meta, body } = (await import("../utils.jsx")).parseFrontmatter(text);
+      const { meta, body } = parseFrontmatter(text); // Use imported function directly
       return {
         slug,
         title: meta.title || "",
