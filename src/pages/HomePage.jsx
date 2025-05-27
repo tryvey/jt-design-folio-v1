@@ -32,7 +32,7 @@ export async function getCaseStudiesFromFiles() {
       return {
         slug,
         title: meta.title || "",
-        image: meta.coverImage || "",
+        image: meta.tileImage || "",
         desc: body.split('.')[0] || "", // Using first sentence of body as description
         link: `/case-study/${slug}`,
         figma: meta.link || "",

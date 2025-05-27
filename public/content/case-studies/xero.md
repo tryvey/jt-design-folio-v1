@@ -2,6 +2,7 @@
 title: Xero
 createdAt: 2025-05-26
 coverImage: /images/case-studies/xero.png
+tileImage: /images/case-studies/xero.png
 link: https://www.figma.com/
 ---
 

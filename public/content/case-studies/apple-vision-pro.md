@@ -1,7 +1,8 @@
 ---
 title: Apple Vision Pro
 createdAt: 2025-05-23
-coverImage: /images/case-studies/vision-pro.png
+coverImage: /images/case-studies/visionpro/cover.png
+tileImage: /images/case-studies/vision-pro.png
 link: https://www.figma.com/
 ---
 
