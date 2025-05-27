@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "mkdir -p public/content && cp -r content/* public/content/",
     "build": "vite build",
+    "postbuild": "rm -rf public/content",
     "lint": "eslint .",
     "preview": "vite preview"
   },
