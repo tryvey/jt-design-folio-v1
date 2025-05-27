@@ -1,4 +1,6 @@
 // Pure and utility functions for the app
+import React from "react";
+import { useTheme } from "./contexts/ThemeContext";
 
 // Parse frontmatter from markdown text
 export function parseFrontmatter(text) {
@@ -48,5 +50,26 @@ export function getBrandColor(title) {
   return "#333333";
 }
 
-// JSX components are now in utils.jsx
-export { ThemeSwitcher } from './utils.jsx';
+// Theme switcher component to toggle between light and dark themes
+export function ThemeSwitcher({ className = "" }) {
+  const { theme, toggleTheme } = useTheme();
+
+  return (
+    <button
+      aria-label="Toggle theme"
+      onClick={toggleTheme}
+      className={`flex items-center justify-center bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 rounded-full p-2 transition-colors text-xl text-neutral-700 dark:text-yellow-300 shadow ${className}`}
+      style={{ minWidth: 40, minHeight: 40 }}
+    >
+      <span role="img" aria-label="Theme">
+        {theme === "dark" ? (
+          // Sun icon for light mode
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2m11-11h-2M3 12H1m16.95 7.07-1.41-1.41M6.34 6.34 4.93 4.93m12.02 0-1.41 1.41M6.34 17.66l-1.41 1.41"/></svg>
+        ) : (
+          // Moon icon for dark mode
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+        )}
+      </span>
+    </button>
+  );
+}

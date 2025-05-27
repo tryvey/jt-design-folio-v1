@@ -7,23 +7,14 @@ function HeroSection({ heroHeader, heroContent }) {
 
   // Parse hero content
   const contentLines = heroContent.split("\n").filter(Boolean);
-  const heroTitle = contentLines[0]?.replace(/^## /, "") || "";
-  const heroSubtitle = contentLines[1] || "";
-  const heroDesc = contentLines.slice(2, contentLines.length - 1).join(" ");
-  const heroCtaMatch = heroContent.match(/\[(.+)\]\(([^)]+)\)/);
-  const heroCta = heroCtaMatch
-    ? { text: heroCtaMatch[1], href: "#projects" }
-    : null;
 
   // Handle smooth scrolling for anchor links
   const handleScrollTo = (e) => {
-    if (heroCta?.href.startsWith("#")) {
-      e.preventDefault();
-      const targetId = heroCta.href.substring(1);
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+    e.preventDefault();
+    const targetId = "projects";
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
@@ -46,41 +37,39 @@ function HeroSection({ heroHeader, heroContent }) {
             style={{ maxWidth: "200px" }}
           />
         </div>
+
         <div className="flex flex-col items-center justify-center text-center my-8">
           <div className="text-2xl md:text-3xl font-bold mb-4 text-white drop-shadow-lg">
             {headerTitle}
           </div>
-          <div
-            className="text-2xl md:text-3xl font-bold leading-tight text-white mb-4 drop-shadow-lg"
-            style={{ maxWidth: "40rem" }}
-          >
-            {heroTitle}
+
+          <div className="space-y-2 md:space-y-6 mb-6">
+            {contentLines.map((line, index) => (
+              <h1
+                key={index}
+                className="text-2xl md:text-2xl lg:text-4xl font-medium text-white drop-shadow-lg"
+              >
+                {line}
+              </h1>
+            ))}
           </div>
-          <div className="text-2xl md:text-3xl font-bold mb-4 text-white drop-shadow-lg">
-            {heroSubtitle}
-          </div>
-          {heroDesc && (
-            <div className="text-2xl md:text-3xl font-bold text-white/90 mb-4 max-w-xl drop-shadow-lg">
-              {heroDesc}
-            </div>
-          )}
         </div>
-        <div className="flex justify-center items-center pb-8">
-          {heroCta && (
-            <a
-              href={heroCta.href}
-              onClick={handleScrollTo}
-              className="inline-block animate-bounce"
-              aria-label={heroCta.text}
-            >
-              <img
-                src="/scroll.svg"
-                alt={heroCta.text}
-                className="w-10 h-10"
-                style={{ filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.3))" }}
-              />
-            </a>
-          )}
+
+        <div className="flex justify-center pb-8">
+          <a
+            href="#projects"
+            className="flex flex-col items-center text-white hover:text-white/80 transition-colors"
+            onClick={handleScrollTo}
+          >
+            <img
+              src="/scroll.svg"
+              alt="Scroll down"
+              className="h-8 w-8 mb-2 animate-bounce"
+            />
+            <span className="text-sm font-medium hidden">
+              Scroll to explore
+            </span>
+          </a>
         </div>
       </div>
     </section>

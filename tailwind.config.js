@@ -7,6 +7,7 @@ export default {
         "./src/**/*.{js,jsx,ts,tsx}",
         "./public/content/**/*.md"
     ],
+    darkMode: 'class', // Enable dark mode with class strategy
     plugins: [typography],
     theme: {
         extend: {

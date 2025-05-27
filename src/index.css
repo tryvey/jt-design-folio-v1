@@ -12,6 +12,16 @@
   scroll-behavior: smooth;
 }
 
+/* Dark mode styles */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: #121212;
+  color: #e5e5e5;
+}
+
 html {
   scroll-behavior: smooth;
 }

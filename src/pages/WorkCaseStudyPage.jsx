@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../components/Footer";
 import WorkCaseStudyPage from "../WorkCaseStudyPage";
+import SubpageHeader from "../components/SubpageHeader";
 
 // Mapping from slug to file path for case studies
 export const caseStudyFiles = {
@@ -21,13 +22,16 @@ export default function WorkCaseStudyRoute() {
   if (file) {
     return (
       <>
-        <WorkCaseStudyPage file={file} />
-        <Footer />
+        <SubpageHeader />
+        <div style={{ paddingTop: 64 }}>
+          <WorkCaseStudyPage file={file} />
+          <Footer />
+        </div>
       </>
     );
   } else {
     return (
-      <div className="min-h-screen flex items-center justify-center text-2xl">
+      <div className="min-h-screen flex items-center justify-center text-2xl text-neutral-800 dark:text-white bg-white dark:bg-neutral-900">
         Case Study Not Found
       </div>
     );

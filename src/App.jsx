@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import WorkCaseStudyRoute from "./pages/WorkCaseStudyPage";
 import { getCaseStudiesFromFiles } from "./pages/HomePage";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 // ============================================================
 // Main App Component
@@ -38,25 +39,27 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <HomePage
-              heroHeader={heroHeader}
-              heroContent={heroContent}
-              about={about}
-              caseStudies={caseStudies}
-            />
-          }
-        />
-        <Route
-          path="/work/:slug"
-          element={<WorkCaseStudyRoute />}
-        />
-      </Routes>
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <HomePage
+                heroHeader={heroHeader}
+                heroContent={heroContent}
+                about={about}
+                caseStudies={caseStudies}
+              />
+            }
+          />
+          <Route
+            path="/work/:slug"
+            element={<WorkCaseStudyRoute />}
+          />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
