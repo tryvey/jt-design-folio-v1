@@ -13,7 +13,6 @@ Design system development and digital transformation for Open Universities Austr
 - 3 Months
 - Jamie Treyvaud – Managing Consultant & Senior Consultant
 
-![](/case-studies/auspost/auspost-project-bento.png)
 
 ### Purpose
 Open Universities approached Telstra Purple to collaborate and execute a design system as a valuable tool moving forward.
@@ -23,3 +22,5 @@ Open Universities wanted to develop a design system to improve collaboration, ef
 
 ### Success
 A unified set of design standards, components, and guidelines was delivered, ensuring a consistent user experience across all products and platforms, and enabling faster, more scalable development.
+
+![](/images/case-studies/auspost/auspost-project-bento.png)

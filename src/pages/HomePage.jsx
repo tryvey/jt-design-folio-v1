@@ -2,9 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
-import CaseStudiesSection from "../components/CaseStudiesSection";
+import CaseStudiesGridSection from "../components/CaseStudiesGridSection";
 import Footer from "../components/Footer";
-import { parseFrontmatter } from "../utils";
+import { parseFrontmatter } from "../utils.jsx";
 
 // Helper: fetch markdown
 export const fetchMarkdown = async (path) => {
@@ -16,6 +16,7 @@ export const fetchMarkdown = async (path) => {
 
 // Helper: get case studies from files
 export async function getCaseStudiesFromFiles() {
+
   const files = [
     { slug: "open-universities-australia", file: "/content/case-studies/open-universities-australia.md" },
     { slug: "marvel-stadium", file: "/content/case-studies/marvel-stadium.md" },
@@ -23,10 +24,11 @@ export async function getCaseStudiesFromFiles() {
     { slug: "xero", file: "/content/case-studies/xero.md" },
     { slug: "apple-vision-pro", file: "/content/case-studies/apple-vision-pro.md" },
   ];
+  
   const studies = await Promise.all(
     files.map(async ({ slug, file }) => {
       const text = await fetchMarkdown(file);
-      const { meta, body } = (await import("../utils")).parseFrontmatter(text);
+      const { meta, body } = (await import("../utils.jsx")).parseFrontmatter(text);
       return {
         slug,
         title: meta.title || "",
@@ -59,7 +61,7 @@ export default function HomePage({ heroHeader, heroContent, about, caseStudies }
     <>
       <HeroSection heroHeader={heroHeader} heroContent={heroContent} />
       <AboutSection about={about} />
-      <CaseStudiesSection
+      <CaseStudiesGridSection
         caseStudies={caseStudies}
         onCaseStudyClick={handleCaseStudyClick}
       />
