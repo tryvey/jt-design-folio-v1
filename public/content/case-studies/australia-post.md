@@ -1,7 +1,7 @@
 ---
 title: Australia Post
 createdAt: 2025-05-26
-coverImage: /images/case-studies/auspost.png
+coverImage: /images/case-studies/auspost/cover.png
 tileImage: /images/case-studies/auspost.png
 link: https://www.figma.com/
 ---
