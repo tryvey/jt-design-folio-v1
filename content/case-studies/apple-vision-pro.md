@@ -6,3 +6,5 @@ link: https://www.figma.com/
 ---
 
 Spatial computing experience prototyping, exploring new interaction paradigms and immersive user journeys.
+
+##### ***Work in Progress, Check back in later***
