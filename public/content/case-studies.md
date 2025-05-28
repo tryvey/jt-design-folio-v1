@@ -1,4 +1,4 @@
-## Case Studies
+## Recent Case Studies
 
 ### Open Universities Australia
 
