@@ -24,7 +24,7 @@ function HeroSection({ heroHeader, heroContent }) {
       style={{
         backgroundImage: "url(/images/hero.png)",
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "right center",
       }}
     >
       <div className="absolute inset-0" aria-hidden="true"></div>
