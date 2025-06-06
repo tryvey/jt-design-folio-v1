@@ -16,7 +16,7 @@ Design system development and digital transformation for Open Universities Austr
 
 
 ### Purpose
-Open Universities approached Telstra Purple to collaborate and execute a design system as a valuable tool moving forward.
+Open Universities approached Telstra Purple to collaborate and execute a Design System as a valuable tool moving forward.
 
 ### The Opportunity
 Open Universities wanted to develop a design system to improve collaboration, efficiency, and the overall quality of their portfolio and brand. With multiple products being developed in parallel, speed of delivery was impacted by factors like specialist availability, communication issues, or lack of clarity around standards.
