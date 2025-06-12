@@ -1,12 +1,12 @@
 ---
-title: Open Universities Australia
+title: Open Universities 'Ollie' Design System
 createdAt: 2025-05-24
 coverImage: /images/case-studies/ou/cover.png
 tileImage: /images/case-studies/ou-tile.png
 link: https://www.figma.com/
 ---
 
-Design system development and digital transformation for Open Universities Australia.
+Developing a Design system for Open Universities.
 
 ### Project Overview
 - Ollie Design System
