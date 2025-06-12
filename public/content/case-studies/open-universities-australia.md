@@ -1,5 +1,5 @@
 ---
-title: Open Universities Australia 'Ollie' Design System
+title:Open Universities Australia 'Ollie' Design System
 createdAt: 2025-05-24
 coverImage: /images/case-studies/ou/cover.png
 tileImage: /images/case-studies/ou-tile.png
