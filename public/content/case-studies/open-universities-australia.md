@@ -1,17 +1,17 @@
 ---
-title: Open Universities 'Ollie' Design System
+title: Open Universities Australia 'Ollie' Design System
 createdAt: 2025-05-24
 coverImage: /images/case-studies/ou/cover.png
 tileImage: /images/case-studies/ou-tile.png
 link: https://www.figma.com/
 ---
 
-Developing a Design system for Open Universities.
+Developing a Design system for Open Universities Australia.
 
 ### Project Overview
 - Ollie Design System
-- Open University
-- 3 Months
+- Open Universities Australia
+- Duration 3 Months
 - Jamie Treyvaud – Managing Consultant & Senior Consultant
 
 
