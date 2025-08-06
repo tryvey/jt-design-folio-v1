@@ -1,5 +1,5 @@
 ---
-title: Australia Post
+title: Australia Post Delivery Simplification Discovery
 createdAt: 2025-05-26
 coverImage: /images/case-studies/auspost/cover.png
 tileImage: /images/case-studies/auspost.png
@@ -7,9 +7,6 @@ link: https://www.figma.com/
 ---
 
 
-# Australia Post Delivery Simplification Discovery
-
-## UX Case Study
 
 ### Context
 
@@ -103,4 +100,4 @@ The discovery culminated in a comprehensive opportunity framework with five prio
 -   Separate stakeholder sessions prevented organizational bias from limiting problem identification
 -   Visual workflow mapping was essential for identifying cross-organizational friction points
 
-The discovery phase successfully set the foundation for future design and prototyping work, with clear priorities and validated opportunities for improving the customer delivery experience.
+-   The discovery phase successfully set the foundation for future design and prototyping work, with clear priorities and validated opportunities for improving the customer delivery experience.
