@@ -50,13 +50,12 @@ The resulting Design System has become a cornerstone of OUA’s digital capabili
   
 ### Final Design
 ---
- - Images to come
+The final Ollie Design System delivered a robust and scalable foundation of reusable UI components, patterns, and documentation—all built in Figma and engineered for seamless implementation. The system embodies OUA’s brand, accessibility standards, and product requirements, enabling teams to move faster with confidence. Designed with flexibility in mind, the system supports modular design across multiple products while maintaining a cohesive user experience. Collaborative tooling, clear usage guidelines, and component consistency have empowered OUA’s teams to create accessible, high-quality digital experiences with less friction and greater alignment.
 
 ### Learnings and next steps
 ---
 A “test as you go” approach to design systems ensures that components are continuously validated in real-world contexts as they are created, rather than after the fact. By integrating testing—across usability, accessibility, and technical implementation—into the design and build workflow, teams can catch issues early, reduce rework, and build greater confidence in the system’s quality and consistency. This iterative method also encourages feedback loops between designers, developers, and end users, helping the system evolve based on actual needs rather than assumptions. Ultimately, it leads to more resilient, user-centered components and a design system that is both trusted and adopted across teams.
 
-Component development for New Home Page, Marketplace, Student Hub, and SelectionX. Continue developing and refining components to support other areas within the Open Universities ecosystem.
 
   
 
