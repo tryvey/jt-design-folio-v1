@@ -19,7 +19,7 @@ link: https://www.figma.com/
 
 ![](/images/case-studies/ou/OU-Bento.png)
 
-*Ollie Design System: Bento-style overview of reusable UI components and patterns.*
+*Ollie Design System: Bento-style overview of Design System key benefits.*
 
 ### Context
 ---
@@ -37,7 +37,7 @@ The resulting Design System has become a cornerstone of OUA’s digital capabili
 
 ![](/images/case-studies/ou/OU-Test-Image2.png)
 
-*Key stages in the design system implementation process, visualized.*
+*Design tokens enable consistent, scalable theming by linking core design decisions—like colour, typography, and spacing—to reusable variables, making it easier to update and maintain visual styles across components and platforms.*
 
 - Working closely with stakeholders across design, development, and marketing.
 
