@@ -43,6 +43,8 @@ Working closely with stakeholders across design, development, and marketing, we:
 -   Developed governance models and contribution guidelines to ensure long-term scalability and adoption across teams
     
 -   Delivered supporting documentation, onboarding materials, and training workshops to empower internal teams
+
+![](/images/case-studies/ou/OU-Test Image.png)
   
 ### Final Design
 ---
