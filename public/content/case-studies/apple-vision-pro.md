@@ -6,6 +6,8 @@ tileImage: /images/case-studies/vision-pro.png
 link: https://www.figma.com/
 ---
 
+---
+
 # Apple Vision Pro Solution Research  
 
 **Project:** Water Infrastructure Applications
@@ -15,13 +17,13 @@ link: https://www.figma.com/
 
 Spatial computing experience prototyping, exploring new interaction paradigms and immersive user journeys.
 
-## 🧭 Context
+### 🧭 Context
 
 Melbourne Water oversees Victoria’s essential waterways and infrastructure. Their field teams face challenges with real-time monitoring, environmental reporting, and infrastructure maintenance—especially in remote or high-risk areas. We explored how Apple Vision Pro could enhance operations through immersive AR experiences.
 
 ---
 
-## 🏁 Outcome
+### 🏁 Outcome
 
 We designed and demonstrated Vision Pro use cases tailored to Melbourne Water’s needs—unlocking potential in inspections, monitoring, stakeholder engagement, and team collaboration. Our spatial UX concepts illustrated how AR and live data overlays could improve response times, accuracy, and public trust.
 

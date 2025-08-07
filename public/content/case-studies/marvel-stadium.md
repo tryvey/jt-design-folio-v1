@@ -6,7 +6,7 @@ tileImage: /images/case-studies/marvelstadium.png
 link: https://www.figma.com/
 ---
 
-### Project Overview
+
 
 **Project:** Marvel Stadium App Design
 
