@@ -52,8 +52,8 @@ Working closely with stakeholders across design, development, and marketing, we:
 ---
 A “test as you go” approach to design systems ensures that components are continuously validated in real-world contexts as they are created, rather than after the fact. By integrating testing—across usability, accessibility, and technical implementation—into the design and build workflow, teams can catch issues early, reduce rework, and build greater confidence in the system’s quality and consistency. This iterative method also encourages feedback loops between designers, developers, and end users, helping the system evolve based on actual needs rather than assumptions. Ultimately, it leads to more resilient, user-centered components and a design system that is both trusted and adopted across teams.
 
-Next Steps: Component development for New Home Page, Marketplace, Student Hub, and SelectionX. Continue developing and refining components to support other areas within the Open Universities ecosystem.
+Component development for New Home Page, Marketplace, Student Hub, and SelectionX. Continue developing and refining components to support other areas within the Open Universities ecosystem.
 
   
 
-![](/images/case-studies/auspost/auspost-project-bento.png)
+![](/images/case-studies/ou/OUA-project-bento.png)
