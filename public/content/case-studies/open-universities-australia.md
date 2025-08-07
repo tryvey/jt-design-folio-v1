@@ -32,19 +32,20 @@ The resulting Design System has become a cornerstone of OUA’s digital capabili
 ### Key Stages
 ---
 
-Working closely with stakeholders across design, development, and marketing, we:
+![](/images/case-studies/ou/OU-Test Image2.png)
 
--   Audited existing design and UI patterns to identify inconsistencies and areas for consolidation
-    
--   Defined a shared visual language, accessibility standards, and component architecture aligned with OUA’s brand and user needs
-    
--   Built a comprehensive library of reusable components in Figma and partnered with engineering to align on implementation in code (e.g. React, Storybook)
-    
--   Developed governance models and contribution guidelines to ensure long-term scalability and adoption across teams
-    
--   Delivered supporting documentation, onboarding materials, and training workshops to empower internal teams
+- Working closely with stakeholders across design, development, and marketing.
 
-![](/images/case-studies/ou/OU-Test-Image2.png)
+- Audited existing design and UI patterns to identify inconsistencies and areas for consolidation
+
+- Defined a shared visual language, accessibility standards, and component architecture aligned with OUA’s brand and user needs
+
+- Built a comprehensive library of reusable components in Figma and partnered with engineering to align on implementation in code (e.g. React, Storybook)
+
+- Developed governance models and contribution guidelines to ensure long-term scalability and adoption across teams
+
+- Delivered supporting documentation, onboarding materials, and training workshops to empower internal teams
+
   
 ### Final Design
 ---
