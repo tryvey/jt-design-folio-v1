@@ -8,11 +8,8 @@ link: https://www.figma.com/
 ### Project Overview
 
 **Project:** Design System Implementation for Open Universities Australia (OUA)
-
 **Client:** Open Universities Australia
-
 **Partner:** Telstra Purple
-
 **Role:** Managing UX Design Consultant
 
 ### Context
