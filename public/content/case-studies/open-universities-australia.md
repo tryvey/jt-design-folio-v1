@@ -32,7 +32,7 @@ The resulting Design System has become a cornerstone of OUA’s digital capabili
 ### Key Stages
 ---
 
-![](/images/case-studies/ou/OU-Test Image2.png)
+![](/images/case-studies/ou/OU-Test-Image2.png)
 
 - Working closely with stakeholders across design, development, and marketing.
 
