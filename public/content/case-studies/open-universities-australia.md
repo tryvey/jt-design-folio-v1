@@ -8,9 +8,13 @@ link: https://www.figma.com/
 ### Project Overview
 
 **Project:** Design System Implementation for Open Universities Australia (OUA)
+
 **Client:** Open Universities Australia
+
 **Partner:** Telstra Purple
+
 **Role:** Managing UX Design Consultant
+
 
 ### Context
 Open Universities Australia (OUA) engaged Telstra Purple to define, design, and implement a scalable Design System that would unify their digital experiences and improve collaboration across cross-functional teams. The goal was to establish a robust and future-ready design foundation to support OUA’s digital transformation and ensure consistency across their growing suite of products and services.
