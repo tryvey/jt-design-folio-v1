@@ -5,11 +5,12 @@ coverImage: /images/case-studies/ou/cover.png
 tileImage: /images/case-studies/ou-tile.png
 link: https://www.figma.com/
 ---
-### Project Overview
 
-**Project:** Design System Implementation for Open Universities Australia (OUA)
+### Overview
 
-**Client:** Open Universities Australia
+**Project:** Design System Implementation
+
+**Client:** Open Universities Australia (OUA)
 
 **Partner:** Telstra Purple
 
