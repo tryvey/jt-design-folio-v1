@@ -11,8 +11,11 @@ link: https://www.figma.com/
 # Apple Vision Pro Solution Research  
 
 **Project:** Water Infrastructure Applications
+
 **Client:** Melbourne Water
+
 **Partner:** Telstra Purple
+
 **Role:** Managing UX Design Consultant
 
 Spatial computing experience prototyping, exploring new interaction paradigms and immersive user journeys.

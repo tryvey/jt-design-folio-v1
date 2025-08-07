@@ -11,7 +11,7 @@ export default function SubpageHeader() {
         {/* Left: Back button */}
         <div className="flex items-center">
           <a
-            href="/"
+            href="/#projects"
             className="flex items-center text-neutral-700 dark:text-neutral-200 bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 rounded-full px-4 py-1 transition-colors text-sm font-medium"
           >
             <span className="mr-2 text-xl">←</span> Back
