@@ -17,7 +17,7 @@ link: https://www.figma.com/
 
 **Role:** Managing UX Design Consultant
 
-![](/images/case-studies/ou/OUA-Bento.png)
+![](/images/case-studies/ou/OU-Bento.png)
 
 ### Context
 ---
