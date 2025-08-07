@@ -19,6 +19,8 @@ link: https://www.figma.com/
 
 ![](/images/case-studies/ou/OU-Bento.png)
 
+*Ollie Design System: Bento-style overview of reusable UI components and patterns.*
+
 ### Context
 ---
 Open Universities Australia (OUA) engaged Telstra Purple to define, design, and implement a scalable Design System that would unify their digital experiences and improve collaboration across cross-functional teams. The goal was to establish a robust and future-ready design foundation to support OUA’s digital transformation and ensure consistency across their growing suite of products and services.
@@ -34,6 +36,8 @@ The resulting Design System has become a cornerstone of OUA’s digital capabili
 ---
 
 ![](/images/case-studies/ou/OU-Test-Image2.png)
+
+*Key stages in the design system implementation process, visualized.*
 
 - Working closely with stakeholders across design, development, and marketing.
 
