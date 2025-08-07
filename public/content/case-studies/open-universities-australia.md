@@ -44,7 +44,7 @@ Working closely with stakeholders across design, development, and marketing, we:
     
 -   Delivered supporting documentation, onboarding materials, and training workshops to empower internal teams
 
-![](/images/case-studies/ou/OU-Test-Image.png)
+![](/images/case-studies/ou/OU-Test-Image2.png)
   
 ### Final Design
 ---
