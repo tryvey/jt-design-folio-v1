@@ -17,6 +17,7 @@ link: https://www.figma.com/
 
 **Role:** Managing UX Design Consultant
 
+![](/images/case-studies/ou/OUA-Bento.png)
 
 ### Context
 ---
@@ -59,4 +60,4 @@ Component development for New Home Page, Marketplace, Student Hub, and Selection
 
   
 
-![](/images/case-studies/ou/OUA-project-bento.png)
+
