@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 import Footer from "../components/Footer";
 import SubpageHeader from "../components/SubpageHeader";
 import { parseFrontmatter } from "../utils.jsx";
@@ -46,7 +47,7 @@ function CaseStudyPage({ file }) {
         </h1>
 
         <div className="text-left custom-markdown-style dark:prose-invert">
-          <ReactMarkdown>{content}</ReactMarkdown>
+          <ReactMarkdown rehypePlugins={[rehypeRaw]}>{content}</ReactMarkdown>
         </div>
       </div>
     </section>
