@@ -52,9 +52,6 @@ What we delivered was far more than a component library—we created **Ollie**, 
 </video>
 **The Dark Mode implementation exemplifies smart system thinking—designers can simply drag components between light and dark frames, and the components intelligently update their appearance. This level of automation reduces errors and speeds up design workflows considerably.**  
 
---zero--
-
-
 - Our partnership with the engineering team was crucial. We didn't just hand over designs; we collaborated closely to ensure seamless implementation in their React and Storybook environment. This collaborative approach, which I've refined over my years at Purple, prevents the all-too-common disconnect between design and development.
 
 - Finally, we established robust governance models and contribution guidelines. A design system without proper governance is just an expensive component library—it needs structure to remain valuable long-term.
@@ -75,6 +72,3 @@ What we delivered was far more than a component library—we created **Ollie**, 
 - Moving forward, I recommend OUA continues this iterative approach, treating Ollie as a living product that grows with their organisation. The foundation we've built together is strong, but the real magic happens when teams start contributing back to the system, creating a virtuous cycle of improvement and innovation.
 
 - This collaborative, evidence-based approach to design systems is what I've seen work consistently across my Purple engagements—it creates systems that aren't just adopted, but genuinely loved by the teams that use them.
-
-
-- Test
