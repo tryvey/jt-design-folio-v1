@@ -77,8 +77,4 @@ What we delivered was far more than a component library—we created **Ollie**, 
 - This collaborative, evidence-based approach to design systems is what I've seen work consistently across my Purple engagements—it creates systems that aren't just adopted, but genuinely loved by the teams that use them.
 
 
-  - This is a simple bullet point
-- Another bullet point with some text
-- A third bullet point for testing
-
-
+- Test
