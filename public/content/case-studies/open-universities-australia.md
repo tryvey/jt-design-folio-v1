@@ -45,7 +45,10 @@ The resulting Design System has become a cornerstone of OUA’s digital capabili
 
 - Implemented a fully integrated dark mode in Figma, ensuring components, color tokens, and accessibility guidelines seamlessly adapted to enhance usability and visual consistency across the design system.
 
-![](/images/case-studies/ou/OU-DarktoLightMode)
+<video width="100%" controls>
+  <source src="/images/case-studies/ou/OU-DarktoLightMode.mov" type="video/quicktime">
+  Your browser does not support the video tag.
+</video>
 *DarkMode*
 
 - Built a comprehensive library of reusable components in Figma and partnered with engineering to align on implementation in code (e.g. React, Storybook)
