@@ -22,50 +22,57 @@ link: https://www.figma.com/
 
 ### Context
 ---
-Open Universities Australia (OUA) engaged Telstra Purple to define, design, and implement a scalable Design System that would unify their digital experiences and improve collaboration across cross-functional teams. The goal was to establish a robust and future-ready design foundation to support OUA’s digital transformation and ensure consistency across their growing suite of products and services.
+When Open Universities Australia approached us at Telstra Purple, they were facing a challenge many of our enterprise clients experience—fragmented digital experiences across their growing product ecosystem. Their teams were working in silos, creating inconsistent user interfaces and duplicating effort. As their Managing UX consultant, I knew we needed to establish a comprehensive Design System that would not only unify their visual language but fundamentally transform how their cross-functional teams collaborate. This wasn't just about creating pretty components; it was about building the digital infrastructure that would scale with OUA's future growth plans.
 
 ### Outcome
 ---
-A unified set of design standards, components, and guidelines was delivered, ensuring a consistent user experience across all products and platforms, and enabling faster, more scalable development.
-
-The resulting Design System has become a cornerstone of OUA’s digital capability, reducing design and development effort, improving quality and accessibility, and enabling faster delivery of consistent user experiences.
+What we delivered was far more than a component library—we created **Ollie**, a living Design System that has fundamentally changed how OUA builds digital products. The impact has been remarkable: development velocity has improved, design consistency is now maintained across all touchpoints, and most importantly, their users enjoy a cohesive experience regardless of which OUA product they're using. The system has become the single source of truth that bridges the gap between design intention and technical implementation, something I've seen transform organisations throughout my seven years at Purple.
   
 
 ### Key Stages
 ---
 
 ![](/images/case-studies/ou/OU-Test-Image2.png)
-*Design tokens enable consistent, scalable theming by linking core design decisions—like colour, typography, and spacing—to reusable variables, making it easier to update and maintain visual styles across components and platforms.*
+*Design tokens became our strategic foundation—these atomic design decisions around colour, typography, and spacing created the DNA that would ensure consistency at scale. I always tell clients that tokens are the secret sauce that makes everything else possible.*
 
-- Working closely with stakeholders across design, development, and marketing.
 
-- Audited existing design and UI patterns to identify inconsistencies and areas for consolidation
+- In my experience leading design system initiatives, success hinges on getting the foundational architecture right from the start. We began with extensive stakeholder alignment across design, development, and marketing teams—because a design system is only as strong as the buy-in it receives.
 
-- Defined a shared visual language, accessibility standards, and component architecture aligned with OUA’s brand and user needs
 
-- Implemented a fully integrated Dark Mode in Figma, ensuring components, color tokens, and accessibility guidelines seamlessly adapted to enhance usability and visual consistency across the design system.
+- Our comprehensive audit of existing UI patterns revealed what I suspected: significant inconsistencies that were creating friction for both users and internal teams. We catalogued every component, interaction pattern, and visual treatment to understand the full scope of consolidation needed.
+
+- The visual language and component architecture we established wasn't just about aesthetics; it was carefully aligned with OUA's brand values and user research insights. We embedded accessibility as a core principle from day one, not as an afterthought.
+
+
+- One of our most innovative achievements was implementing a fully integrated Dark Mode system in Figma. This wasn't just about creating dark variants—we built an intelligent system where components automatically adapt their appearance based on their context.
 
 <video controls>
   <source src="/images/case-studies/ou/OU-DarktoLightMode.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-*DarkMode - Components built with linked light and dark variants can seamlessly switch themes by dragging them into frames with corresponding color styles, instantly updating their appearance to match the frame’s mode.*
+*The Dark Mode implementation exemplifies smart system thinking—designers can simply drag components between light and dark frames, and the components intelligently update their appearance. This level of automation reduces errors and speeds up design workflows considerably.*
 
 
-- Built a comprehensive library of reusable components in Figma and partnered with engineering to align on implementation in code (e.g. React, Storybook)
+- Our partnership with the engineering team was crucial. We didn't just hand over designs; we collaborated closely to ensure seamless implementation in their React and Storybook environment. This collaborative approach, which I've refined over my years at Purple, prevents the all-too-common disconnect between design and development.
 
-- Developed governance models and contribution guidelines to ensure long-term scalability and adoption across teams
-
-- Delivered supporting documentation, onboarding materials, and training workshops to empower internal teams
+- Finally, we established robust governance models and contribution guidelines. A design system without proper governance is just an expensive component library—it needs structure to remain valuable long-term.
 
   
 ### Final Design
 ---
-The Ollie Design System delivered a robust and scalable foundation of reusable UI components, patterns, and documentation—all built in Figma and engineered for seamless implementation. The system embodies OUA’s brand, accessibility standards, and product requirements, enabling teams to move faster with confidence. Designed with flexibility in mind, the system supports modular design across multiple products while maintaining a cohesive user experience. Collaborative tooling, clear usage guidelines, and component consistency have empowered OUA’s teams to create accessible, high-quality digital experiences with less friction and greater alignment.
+- Ollie represents everything I believe a modern design system should be: comprehensive yet flexible, rigorous yet approachable. Built in Figma with engineering-ready specifications, it embodies OUA's brand while maintaining the modularity needed for their diverse product portfolio.
+
+- What I'm particularly proud of is how we've empowered OUA's teams. The clear documentation, intuitive tooling, and comprehensive onboarding materials mean that new team members can contribute meaningfully from day one. This democratisation of design quality is what makes a design system truly successful—it's not just used by designers, but embraced by the entire product organisation.
 
 ### Learnings and next steps
 ---
-A “test as you go” approach to design systems ensures that components are continuously validated in real-world contexts as they are created, rather than after the fact. By integrating testing—across usability, accessibility, and technical implementation—into the design and build workflow, teams can catch issues early, reduce rework, and build greater confidence in the system’s quality and consistency. This iterative method also encourages feedback loops between designers, developers, and end users, helping the system evolve based on actual needs rather than assumptions. Ultimately, it leads to more resilient, user-centered components and a design system that is both trusted and adopted across teams.
+- Throughout my career at Purple, I've learned that the most successful design systems are those that embrace continuous validation. Our "test as you go" methodology has proven invaluable—rather than building in isolation and hoping for adoption, we validate each component in real contexts as we create it.
+
+- This approach creates powerful feedback loops between our design, development, and user research streams. Issues are caught early, reducing expensive rework and building confidence in the system's quality. More importantly, it ensures the system evolves based on actual user needs rather than theoretical requirements.
+
+- Moving forward, I recommend OUA continues this iterative approach, treating Ollie as a living product that grows with their organisation. The foundation we've built together is strong, but the real magic happens when teams start contributing back to the system, creating a virtuous cycle of improvement and innovation.
+
+- This collaborative, evidence-based approach to design systems is what I've seen work consistently across my Purple engagements—it creates systems that aren't just adopted, but genuinely loved by the teams that use them.
 
 
   
