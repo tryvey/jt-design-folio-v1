@@ -43,6 +43,11 @@ The resulting Design System has become a cornerstone of OUA’s digital capabili
 
 - Defined a shared visual language, accessibility standards, and component architecture aligned with OUA’s brand and user needs
 
+- Implemented a fully integrated dark mode in Figma, ensuring components, color tokens, and accessibility guidelines seamlessly adapted to enhance usability and visual consistency across the design system.
+
+![](/images/case-studies/ou/OU-DarktoLightMode)
+*DarkMode*
+
 - Built a comprehensive library of reusable components in Figma and partnered with engineering to align on implementation in code (e.g. React, Storybook)
 
 - Developed governance models and contribution guidelines to ensure long-term scalability and adoption across teams
@@ -52,7 +57,7 @@ The resulting Design System has become a cornerstone of OUA’s digital capabili
   
 ### Final Design
 ---
-The final Ollie Design System delivered a robust and scalable foundation of reusable UI components, patterns, and documentation—all built in Figma and engineered for seamless implementation. The system embodies OUA’s brand, accessibility standards, and product requirements, enabling teams to move faster with confidence. Designed with flexibility in mind, the system supports modular design across multiple products while maintaining a cohesive user experience. Collaborative tooling, clear usage guidelines, and component consistency have empowered OUA’s teams to create accessible, high-quality digital experiences with less friction and greater alignment.
+The Ollie Design System delivered a robust and scalable foundation of reusable UI components, patterns, and documentation—all built in Figma and engineered for seamless implementation. The system embodies OUA’s brand, accessibility standards, and product requirements, enabling teams to move faster with confidence. Designed with flexibility in mind, the system supports modular design across multiple products while maintaining a cohesive user experience. Collaborative tooling, clear usage guidelines, and component consistency have empowered OUA’s teams to create accessible, high-quality digital experiences with less friction and greater alignment.
 
 ### Learnings and next steps
 ---
