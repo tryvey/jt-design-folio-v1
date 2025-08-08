@@ -47,7 +47,6 @@ The resulting Design System has become a cornerstone of OUA’s digital capabili
 
 <video width="100%" controls style="max-width: 100%; height: auto;">
   <source src="/images/case-studies/ou/OU-DarktoLightMode.mp4" type="video/mp4">
-  <p>Your browser does not support the video tag. <a href="/images/case-studies/ou/OU-DarktoLightMode.mp4">Download the video</a></p>
 </video>
 *DarkMode*
 
