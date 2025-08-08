@@ -45,8 +45,9 @@ The resulting Design System has become a cornerstone of OUA’s digital capabili
 
 - Implemented a fully integrated Dark Mode in Figma, ensuring components, color tokens, and accessibility guidelines seamlessly adapted to enhance usability and visual consistency across the design system.
 
-<video width="100%" controls style="max-width: 100%; height: auto;">
+<video controls>
   <source src="/images/case-studies/ou/OU-DarktoLightMode.mp4" type="video/mp4">
+  Your browser does not support the video tag.
 </video>
 *DarkMode*
 
