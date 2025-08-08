@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
+import remarkGfm from "remark-gfm";
 import Footer from "../components/Footer";
 import SubpageHeader from "../components/SubpageHeader";
 import { parseFrontmatter } from "../utils.jsx";
@@ -47,7 +48,12 @@ function CaseStudyPage({ file }) {
         </h1>
 
         <div className="text-left custom-markdown-style dark:prose-invert">
-          <ReactMarkdown rehypePlugins={[rehypeRaw]}>{content}</ReactMarkdown>
+          <ReactMarkdown 
+            remarkPlugins={[remarkGfm]} 
+            rehypePlugins={[rehypeRaw]}
+          >
+            {content}
+          </ReactMarkdown>
         </div>
       </div>
     </section>
