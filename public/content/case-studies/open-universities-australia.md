@@ -52,7 +52,6 @@ The resulting Design System has become a cornerstone of OUA’s digital capabili
 *DarkMode - Components built with linked light and dark variants can seamlessly switch themes by dragging them into frames with corresponding color styles, instantly updating their appearance to match the frame’s mode.*
 
 
-
 - Built a comprehensive library of reusable components in Figma and partnered with engineering to align on implementation in code (e.g. React, Storybook)
 
 - Developed governance models and contribution guidelines to ensure long-term scalability and adoption across teams
