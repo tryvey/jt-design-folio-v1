@@ -43,11 +43,11 @@ The resulting Design System has become a cornerstone of OUA’s digital capabili
 
 - Defined a shared visual language, accessibility standards, and component architecture aligned with OUA’s brand and user needs
 
-- Implemented a fully integrated dark mode in Figma, ensuring components, color tokens, and accessibility guidelines seamlessly adapted to enhance usability and visual consistency across the design system.
+- Implemented a fully integrated Dark Mode in Figma, ensuring components, color tokens, and accessibility guidelines seamlessly adapted to enhance usability and visual consistency across the design system.
 
-<video width="100%" controls autoplay muted loop>
+<video width="100%" controls style="max-width: 100%; height: auto;">
   <source src="/images/case-studies/ou/OU-DarktoLightMode.mp4" type="video/mp4">
-  Your browser does not support the video tag.
+  <p>Your browser does not support the video tag. <a href="/images/case-studies/ou/OU-DarktoLightMode.mp4">Download the video</a></p>
 </video>
 *DarkMode*
 
