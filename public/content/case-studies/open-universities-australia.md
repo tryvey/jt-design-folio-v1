@@ -50,7 +50,9 @@ What we delivered was far more than a component library—we created **Ollie**, 
   <source src="/images/case-studies/ou/OU-DarktoLightMode.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-*The Dark Mode implementation exemplifies smart system thinking—designers can simply drag components between light and dark frames, and the components intelligently update their appearance. This level of automation reduces errors and speeds up design workflows considerably.*
+**The Dark Mode implementation exemplifies smart system thinking—designers can simply drag components between light and dark frames, and the components intelligently update their appearance. This level of automation reduces errors and speeds up design workflows considerably.**  
+
+--zero--
 
 
 - Our partnership with the engineering team was crucial. We didn't just hand over designs; we collaborated closely to ensure seamless implementation in their React and Storybook environment. This collaborative approach, which I've refined over my years at Purple, prevents the all-too-common disconnect between design and development.
