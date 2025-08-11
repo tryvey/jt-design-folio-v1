@@ -33,7 +33,7 @@ function CaseStudyPage({ file }) {
   }, [file]);
 
   return (
-    <section className="min-h-screen bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white">
+    <section className="min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-white">
       <div className="max-w-3xl mx-auto py-16 px-4">
         {meta.coverImage && (
           <img
@@ -71,7 +71,7 @@ export default function WorkCaseStudyRoute() {
     return (
       <>
         <SubpageHeader />
-        <div style={{ paddingTop: 64 }}>
+        <div>
           <CaseStudyPage file={file} />
           <Footer />
         </div>
@@ -79,7 +79,7 @@ export default function WorkCaseStudyRoute() {
     );
   } else {
     return (
-      <div className="min-h-screen flex items-center justify-center text-2xl text-neutral-800 dark:text-white bg-white dark:bg-neutral-900">
+      <div className="min-h-screen flex items-center justify-center text-2xl text-neutral-800 dark:text-white bg-neutral-50 dark:bg-neutral-950">
         Case Study Not Found
       </div>
     );

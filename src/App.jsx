@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage";
 import WorkCaseStudyRoute from "./pages/WorkCaseStudyPage";
 import { getCaseStudiesFromFiles } from "./pages/HomePage";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import Navigation from "./components/Navigation";
 
 // ============================================================
 // Main App Component
@@ -41,23 +42,26 @@ function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <HomePage
-                heroHeader={heroHeader}
-                heroContent={heroContent}
-                about={about}
-                caseStudies={caseStudies}
-              />
-            }
-          />
-          <Route
-            path="/work/:slug"
-            element={<WorkCaseStudyRoute />}
-          />
-        </Routes>
+        <Navigation />
+        <div className="pt-16">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <HomePage
+                  heroHeader={heroHeader}
+                  heroContent={heroContent}
+                  about={about}
+                  caseStudies={caseStudies}
+                />
+              }
+            />
+            <Route
+              path="/work/:slug"
+              element={<WorkCaseStudyRoute />}
+            />
+          </Routes>
+        </div>
       </BrowserRouter>
     </ThemeProvider>
   );

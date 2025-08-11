@@ -20,7 +20,7 @@ function HeroSection({ heroHeader, heroContent }) {
 
   return (
     <section
-      className="relative w-full min-h-screen flex items-center justify-center"
+      className="relative w-full h-[85vh] md:h-[80vh] flex items-center justify-center"
       style={{
         backgroundImage: "url(/images/hero.png)",
         backgroundSize: "cover",
@@ -28,17 +28,8 @@ function HeroSection({ heroHeader, heroContent }) {
       }}
     >
       <div className="absolute inset-0" aria-hidden="true"></div>
-      <div className="relative z-10 w-full min-h-screen flex flex-col justify-between px-4 py-12">
-        <div className="flex justify-center items-center pt-8">
-          <img
-            src="/images/JT-logo.svg"
-            alt="Logo"
-            className="w-48 md:w-56 lg:w-64"
-            style={{ maxWidth: "200px" }}
-          />
-        </div>
-
-        <div className="flex flex-col items-center justify-center text-center my-8">
+      <div className="relative z-10 w-full h-full flex flex-col justify-center px-4 py-12">
+        <div className="flex flex-col items-center justify-center text-center">
           <div className="text-2xl md:text-3xl font-bold mb-4 text-white drop-shadow-lg">
             {headerTitle}
           </div>
@@ -55,7 +46,7 @@ function HeroSection({ heroHeader, heroContent }) {
           </div>
         </div>
 
-        <div className="flex justify-center pb-8">
+        <div className="flex justify-center mt-16">
           <a
             href="#projects"
             className="flex flex-col items-center text-white hover:text-white/80 transition-colors"

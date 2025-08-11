@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
 import CaseStudiesGridSection from "../components/CaseStudiesGridSection";
+import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import { parseFrontmatter } from "../utils.jsx";
 
@@ -65,6 +66,7 @@ export default function HomePage({ heroHeader, heroContent, about, caseStudies }
         caseStudies={caseStudies}
         onCaseStudyClick={handleCaseStudyClick}
       />
+      <ContactSection />
       <Footer />
     </>
   );
