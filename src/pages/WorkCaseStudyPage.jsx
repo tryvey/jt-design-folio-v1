@@ -68,7 +68,10 @@ function CaseStudyPage({ file }) {
         style={{ maxWidth: '100%', height: 'auto' }}
         controls
         preload="metadata"
-      />
+        playsInline
+      >
+        Your browser doesn't support video playback.
+      </video>
     ),
   };
 

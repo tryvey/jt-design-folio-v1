@@ -36,6 +36,8 @@ What we delivered was far more than a component library—we created **Ollie**, 
 *Design tokens became our strategic foundation—these atomic design decisions around colour, typography, and spacing created the DNA that would ensure consistency at scale. I always tell clients that tokens are the secret sauce that makes everything else possible.*
 
 
+
+
 - In my experience leading design system initiatives, success hinges on getting the foundational architecture right from the start. We began with extensive stakeholder alignment across design, development, and marketing teams—because a design system is only as strong as the buy-in it receives.
 
 
@@ -46,10 +48,7 @@ What we delivered was far more than a component library—we created **Ollie**, 
 
 - One of our most innovative achievements was implementing a fully integrated Dark Mode system in Figma. This wasn't just about creating dark variants—we built an intelligent system where components automatically adapt their appearance based on their context.
 
-<video controls>
-  <source src="/images/case-studies/ou/OU-DarktoLightMode.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![](/images/case-studies/ou/OU-Bento.gif)
 **The Dark Mode implementation exemplifies smart system thinking—designers can simply drag components between light and dark frames, and the components intelligently update their appearance. This level of automation reduces errors and speeds up design workflows considerably.**  
 
 - Our partnership with the engineering team was crucial. We didn't just hand over designs; we collaborated closely to ensure seamless implementation in their React and Storybook environment. This collaborative approach, which I've refined over my years at Purple, prevents the all-too-common disconnect between design and development.

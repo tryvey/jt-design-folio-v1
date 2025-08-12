@@ -57,7 +57,7 @@ export default function ImageModal({ media, alt, isOpen, onClose }) {
               className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
               onClick={(e) => e.stopPropagation()} // Prevent closing when clicking video
             >
-              Your browser does not support the video tag.
+              Your browser doesn't support video playback.
             </video>
           ) : (
             <img
