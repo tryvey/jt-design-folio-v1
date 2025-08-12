@@ -6,98 +6,88 @@ tileImage: /images/case-studies/auspost.png
 link: https://www.figma.com/
 ---
 
+---
 
+<br>
 
-### Context
+**Client:** Australia Post
 
-Telstra Purple was engaged to conduct a discovery project aimed at improving the end-to-end delivery process for Telstra products through Australia Post. The challenge involved a complex supply chain with multiple stakeholders including Telstra, Australia Post, StarTrack, and Toll, where customers experienced frustrations with tracking, delivery failures, address validation issues, and lengthy claims processes.
+**Partner:** Telstra Purple
 
-The project addressed critical business challenges including a DIFOT (Delivery In Full On Time) rate of only 95.6% (below agreed SLA), $1-2M annual losses from damaged goods, fraud detection gaps, and poor customer experience across multiple touchpoints. The discovery aimed to identify pain points and opportunities for improvement across the entire delivery ecosystem.
+**Role:** Managing UX Design Consultant
 
-### Outcome
+## Context
+---
+<br>
+When Telstra Purple was brought in to tackle the complex delivery ecosystem between Telstra and Australia Post, I knew we were facing one of those challenging multi-stakeholder scenarios that requires careful orchestration. The problem wasn't just about improving a single process—we were dealing with an intricate web of relationships involving Telstra, Australia Post, StarTrack, and Toll, where customers were caught in the middle of operational inefficiencies.
 
-The 3-week discovery phase successfully identified and prioritized key improvement opportunities across five critical areas:
+The numbers told a stark story. With a DIFOT (Delivery In Full On Time) rate sitting at just 95.6% (falling short of agreed SLAs [Service Level Agreements]), the business was hemorrhaging $1-2M annually from damaged goods alone. Add to this the fraud detection gaps and poor customer experience across multiple touchpoints, and it became clear that we needed a comprehensive approach to understand where the real pain points lived across this complex delivery ecosystem.
 
--   **Claims Process Reform**: Streamlined dispute resolution and consolidated information pipelines
--   **DIFOT Process Enhancement**: Improved forecasting, transparency, and reporting mechanisms
--   **Address Validation Optimization**: Standardized address databases and early validation processes
--   **Digital Airlock Security Upgrade**: Enhanced 4-digit verification system for secure deliveries
--   **Damage Prevention**: Real-time tracking and touch-point mapping to reduce $1-2M annual losses
+Drawing on my experience leading discovery phases for large-scale transformation projects at Telstra Purple, I structured this engagement to ensure we could capture the full picture while building consensus among stakeholders who rarely had the opportunity to see beyond their own organizational boundaries.
 
-The project provided clear recommendations for quick wins and strategic improvements, with validated pain points from all stakeholders and prioritized solutions based on financial impact, reputational risk, and implementation complexity.
+## Outcome
+---
+<br>
+The discovery phase delivered exactly what we hoped for—a clear roadmap of validated opportunities across five critical improvement areas. I guided the team through a systematic approach that revealed not just the obvious pain points, but the underlying systemic issues that were driving customer frustration.
 
-### Key Stages
+We identified streamlined approaches for claims process reform that would consolidate information pipelines and speed up dispute resolution. Our analysis of the DIFOT (Delivery In Full On Time) process revealed opportunities for enhanced forecasting and transparency that could bring performance back above SLA [Service Level Agreement] thresholds. The address validation work uncovered how standardizing databases and implementing early validation could prevent many delivery failures before they occurred.
 
-**Stage 1: Stakeholder Discovery (Week 1)**
+Perhaps most importantly, we discovered that the Digital Airlock security system—while well-intentioned—was creating unnecessary customer friction. Our recommendation for an enhanced 4-digit verification system would maintain security while dramatically improving the user experience. The damage prevention opportunities we mapped could potentially save the full $1-2M annual loss through real-time tracking and better touch-point management.
 
--   Conducted separate discovery workshops with Australia Post and Telstra teams
--   Mapped current workflows from each organization's perspective
--   Captured pain points specific to each stakeholder group
--   Identified key personnel and process touchpoints
+What made this discovery particularly successful was how we moved beyond identifying problems to creating a prioritized framework based on financial impact, reputational risk, and implementation complexity. This gave the client teams clear direction for both quick wins and strategic investments.
 
-**Stage 2: Joint Analysis (Week 2)**
+## Key Stages
+---
+<br>
 
--   Facilitated combined workshop with both Telstra and Australia Post teams
--   Synthesized workflows into unified end-to-end process map
--   Validated pain points across organizational boundaries
--   Identified opportunities for cross-functional improvements
+**Stage 1: Stakeholder Discovery**
 
-**Stage 3: Synthesis & Prioritization (Week 3)**
+I made the strategic decision to conduct separate discovery workshops initially, having learned from previous complex stakeholder engagements that organizational perspectives can sometimes overshadow shared pain points when groups are combined too early. We spent dedicated time with both the Australia Post and Telstra teams, mapping their current workflows from each organization's unique vantage point.
 
--   Analyzed findings and highlighted critical gaps in service delivery
--   Prioritized opportunities based on business impact and feasibility
--   Developed recommendations for immediate and long-term improvements
--   Created roadmap for future solution development phases
+This approach allowed us to capture pain points that might have been diplomatically softened in joint sessions, while identifying the key personnel and process touchpoints that would be critical for any future solutions. My leadership during these sessions focused on creating safe spaces where team members could honestly discuss frustrations without feeling they were criticizing their partner organizations.
 
-### Final Design
+**Stage 2: Joint Analysis**
 
-The discovery culminated in a comprehensive opportunity framework with five priority areas:
+Once we had a solid understanding of each stakeholder's perspective, I facilitated the combined workshop that brought both Telstra and Australia Post teams together. This is where the real magic happened—watching team members realize that their individual pain points were often symptoms of the same underlying system issues.
 
-**Immediate Quick Wins:**
+Under my guidance, we synthesized the separate workflows into a unified end-to-end process map that revealed the handoff points where things typically went wrong. The collaborative validation process I led helped teams see beyond their organizational boundaries and identify opportunities for cross-functional improvements that would benefit everyone, especially the end customers.
 
--   Claims process review and consolidation
--   DIFOT process mapping and transparency improvements
--   Digital Airlock security enhancements (4-digit verification fix)
+**Stage 3: Synthesis & Prioritization**
 
-**Strategic Improvements:**
+Drawing on my years of experience translating research insights into actionable business recommendations, I led the team through a rigorous analysis phase. We highlighted the critical gaps in service delivery and developed a prioritization framework that balanced business impact against implementation feasibility.
 
--   Address validation standardization using shared databases
--   Real-time damage prevention through improved tracking
--   Customer notification enhancement across all touchpoints
--   Contract driver compliance improvements
--   Fraud prevention automation
+My approach to creating the roadmap ensured that stakeholders could see both immediate opportunities and longer-term strategic investments. This dual timeline approach has proven successful in my previous engagements, as it gives clients quick wins to build momentum while maintaining focus on transformational changes.
 
-**Process Improvements Identified:**
+## Final Research 
+---
+<br>
 
--   Unified tracking system across StarTrack and Australia Post
--   Improved scanning processes and chain of custody clarity
--   Enhanced customer communication and preference management
--   Streamlined returns and reconsignment processes
+The discovery culminated in a comprehensive opportunity framework that I organized into clear priority tiers. The immediate quick wins included claims process review and consolidation, DIFOT process mapping improvements, and the Digital Airlock security enhancement that could be implemented with relatively minor technical changes.
 
-### Learnings
+For strategic improvements, we identified address validation standardization using shared databases and real-time damage prevention systems that would require more significant investment but deliver substantial long-term value. The customer notification enhancements and contract driver compliance improvements rounded out a holistic approach to ecosystem-wide improvement.
 
-**Human-Centered Design Insights:**
+The process improvements we documented focused on creating unified tracking systems, enhanced scanning processes, and streamlined returns management. My experience with similar complex integrations helped the team understand how these seemingly separate improvements would work together to create a significantly better customer experience.
 
--   Multi-stakeholder ecosystems require separate discovery sessions before joint collaboration
--   Pain points often exist at organizational handoff points, not within individual processes
--   Customer experience is directly impacted by internal operational inefficiencies
+## Learnings
+---  
+<br>
 
-**Process Design Discoveries:**
+**Human-Centered Design Insights**
+This project reinforced several key insights from my years of leading discovery work in multi-stakeholder environments. The decision to conduct separate discovery sessions before joint collaboration proved crucial—it prevented organizational politics from limiting honest problem identification and allowed us to build a complete picture before asking teams to collaborate on solutions.
 
--   5% of tracking events fail to transfer between systems, creating customer confusion
--   Manual address entry leads to delivery failures that could be prevented with better validation
--   Security processes (Digital Airlock) created customer friction without proportional risk reduction
+We confirmed once again that the most significant pain points typically exist at organizational handoff points rather than within individual processes. This insight guided our focus toward integration and communication improvements rather than trying to optimize individual organizational workflows in isolation.
 
-**Strategic UX Learnings:**
+Perhaps most importantly, we saw clear evidence that customer experience issues are often direct reflections of internal operational inefficiencies. When internal processes are unclear or inefficient, that confusion inevitably reaches customers.
 
--   Complex B2B2C relationships require careful orchestration of multiple user journeys
--   Data quality issues upstream cascade into poor customer experiences downstream
--   Small operational improvements (like 4-digit verification) can have significant customer satisfaction impacts
+**Process Design Discoveries**
+The data revealed that 5% of tracking events fail to transfer between systems—a seemingly small percentage that creates massive customer confusion and support burden. Manual address entry processes were causing preventable delivery failures that better validation systems could easily address. The Digital Airlock security system was creating customer friction that far outweighed the security risk it was designed to mitigate.
 
-**Methodology Insights:**
+**Strategic UX Learnings**
+Complex B2B2C (Business-to-Business-to-Consumer) relationships require incredibly careful orchestration of multiple user journeys, and my experience helped the team understand how to map these interconnected experiences effectively. We documented how data quality issues upstream cascade into poor customer experiences downstream—a pattern I've observed across many enterprise engagements.
 
--   Workshop pivoting from challenge statements to deep pain point exploration yielded richer insights
--   Separate stakeholder sessions prevented organizational bias from limiting problem identification
--   Visual workflow mapping was essential for identifying cross-organizational friction points
+Small operational improvements, like fixing the 4-digit verification system, can have disproportionately large impacts on customer satisfaction when they address fundamental usability issues.
 
--   The discovery phase successfully set the foundation for future design and prototyping work, with clear priorities and validated opportunities for improving the customer delivery experience.
+**Methodology Insights**
+My decision to pivot the workshops from abstract challenge statements to concrete pain point exploration yielded much richer insights than traditional problem-solving approaches. The visual workflow mapping techniques I introduced proved essential for helping stakeholders identify cross-organizational friction points that weren't visible when looking at processes in isolation.
+
+The discovery phase successfully established a solid foundation for future design and prototyping work, with clear priorities and validated opportunities that the entire stakeholder ecosystem could rally behind. My leadership throughout this process ensured that we maintained focus on customer outcomes while building the organizational alignment necessary for successful implementation.
