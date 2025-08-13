@@ -1,8 +1,8 @@
 ---
-title: Australia Post Delivery Simplification Discovery
+title: Delivery Simplification Discovery
 createdAt: 2025-05-26
 coverImage: /images/case-studies/auspost/cover.png
-tileImage: /images/case-studies/auspost.png
+tileImage: /images/case-studies/auspost1.png
 link: https://www.figma.com/
 ---
 

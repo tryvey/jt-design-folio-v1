@@ -45,7 +45,7 @@ export function getBrandColor(title) {
   if (lowerTitle.includes("open universities")) return "#4052B5";
   if (lowerTitle.includes("marvel stadium")) return "#4D2230";
   if (lowerTitle.includes("xero")) return "#13B5EA";
-  if (lowerTitle.includes("post") || lowerTitle.includes("australia post")) return "#000000";
+  if (lowerTitle.includes("post") || lowerTitle.includes("australia post")) return "#DC1928";
   if (lowerTitle.includes("vision") || lowerTitle.includes("apple")) return "#000000";
   return "#333333";
 }

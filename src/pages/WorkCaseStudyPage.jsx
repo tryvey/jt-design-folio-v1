@@ -77,7 +77,7 @@ function CaseStudyPage({ file }) {
 
   return (
     <section className="min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-white">
-      <div className="max-w-3xl mx-auto py-16 px-4">
+      <div className="max-w-6xl mx-auto py-16 px-4">
         {meta.coverImage && (
           <img
             src={meta.coverImage}

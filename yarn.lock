@@ -244,6 +244,11 @@
   resolved "https://registry.npmjs.org/@fontsource/inter/-/inter-5.2.5.tgz"
   integrity sha512-kbsPKj0S4p44JdYRFiW78Td8Ge2sBVxi/PIBwmih+RpSXUdvS9nbs1HIiuUSPtRMi14CqLEZ/fbk7dj7vni1Sg==
 
+"@fontsource/playfair-display@^5.2.6":
+  version "5.2.6"
+  resolved "https://registry.npmjs.org/@fontsource/playfair-display/-/playfair-display-5.2.6.tgz"
+  integrity sha512-hWfFm2j+Dlg+UwabNJu5vi45otmLSG64hUzNFJ8pIDBgqWBviEPpVaDIZWHm2RYyIxhg9YXTPsZWdpvsu7fkqQ==
+
 "@humanfs/core@^0.19.1":
   version "0.19.1"
   resolved "https://registry.npmjs.org/@humanfs/core/-/core-0.19.1.tgz"

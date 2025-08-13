@@ -1,5 +1,5 @@
 ---
-title: Xero Go App: Designing for the Gig Economy
+title: Xero Go App
 createdAt: 2025-05-26
 coverImage: /images/case-studies/xero/cover.png
 tileImage: /images/case-studies/xero.png
@@ -23,7 +23,7 @@ link: https://www.figma.com/
 
 **The Challenge**
 
-Xero had 3.49 million subscribers and A$1.3 billion in annual revenue, but was missing a massive opportunity with 10 million sole traders who found traditional accounting software too complex and irrelevant.
+Xero had 3.49 million subscribers and A$1.3 billion in annual revenue, but was missing a massive opportunity with 10 million sole traders who found traditional accounting software too complex and irrelevant. Designing for the Gig Economy
 
 **The Problem**
 
