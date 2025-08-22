@@ -5,6 +5,7 @@ import "@fontsource/inter";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import WorkCaseStudyRoute from "./pages/WorkCaseStudyPage";
+import ResumePage from "./pages/ResumePage";
 import { getCaseStudiesFromFiles } from "./pages/HomePage";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Navigation from "./components/Navigation";
@@ -59,6 +60,10 @@ function App() {
             <Route
               path="/work/:slug"
               element={<WorkCaseStudyRoute />}
+            />
+            <Route
+              path="/resume"
+              element={<ResumePage />}
             />
           </Routes>
         </div>

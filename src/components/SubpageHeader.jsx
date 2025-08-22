@@ -2,25 +2,36 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "./ui/Button.jsx";
 
-export default function SubpageHeader() {
+export default function SubpageHeader({ scrollToTop = false }) {
   const navigate = useNavigate();
 
   const handleBackClick = (e) => {
     e.preventDefault();
     navigate("/");
-    // Use setTimeout to ensure navigation completes before scrolling
-    setTimeout(() => {
-      const projectsSection = document.getElementById("projects");
-      if (projectsSection) {
-        // Scroll to the section with some offset to account for the fixed header
-        const headerHeight = 64; // 16 * 4 = 64px (h-16)
-        const elementTop = projectsSection.offsetTop - headerHeight;
+    
+    if (scrollToTop) {
+      // Scroll to top of home page
+      setTimeout(() => {
         window.scrollTo({
-          top: elementTop,
+          top: 0,
           behavior: "smooth"
         });
-      }
-    }, 100);
+      }, 100);
+    } else {
+      // Use setTimeout to ensure navigation completes before scrolling to projects section
+      setTimeout(() => {
+        const projectsSection = document.getElementById("projects");
+        if (projectsSection) {
+          // Scroll to the section with some offset to account for the fixed header
+          const headerHeight = 64; // 16 * 4 = 64px (h-16)
+          const elementTop = projectsSection.offsetTop - headerHeight;
+          window.scrollTo({
+            top: elementTop,
+            behavior: "smooth"
+          });
+        }
+      }, 100);
+    }
   };
 
   return (

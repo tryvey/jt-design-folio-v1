@@ -13,6 +13,10 @@ export default {
         extend: {
             fontFamily: {
                 sans: ["Inter", "sans-serif"],
+                sansBold: ["Inter", "sans-serif"],
+                serif: ["Playfair Display", "serif"],
+                display: ["Playfair Display", "serif"],
+                headline: ["Mozilla Headline", "Inter", "Helvetica Neue", "Arial", "sans-serif"],
             },
             colors: {
                 neutral: {

@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 flex flex-col items-center justify-center space-y-6">
         {/* Logo - same styling as header navigation */}
         <div className="flex justify-center items-center">
-          <button onClick={handleLogoClick} className="text-xl font-bold text-neutral-800 dark:text-white hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors">
+          <button onClick={handleLogoClick} className="text-xl md:text-[26px] font-bold text-neutral-800 dark:text-white hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors font-headline">
             Jamie Treyvaud
           </button>
         </div>

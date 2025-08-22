@@ -10,11 +10,16 @@ export default function Navigation() {
   const [activeSection, setActiveSection] = useState("");
 
   const isActive = (path) => {
+    // Check for specific routes
     if (path === "/" && location.pathname === "/") return true;
     if (path === "/case-studies" && location.pathname.startsWith("/work")) return true;
+    if (path === "/resume" && location.pathname === "/resume") return true;
+    
+    // Check for homepage sections
     if (path === "/about" && activeSection === "about") return true;
     if (path === "/case-studies" && activeSection === "projects") return true;
     if (path === "/contact" && activeSection === "contact") return true;
+    
     return false;
   };
 
@@ -24,24 +29,53 @@ export default function Navigation() {
       const sections = ["about", "projects", "contact"];
       const headerHeight = 64;
       
+      // Check if we're on the homepage
+      if (location.pathname !== "/") {
+        setActiveSection("");
+        return;
+      }
+      
+      // Get current scroll position
+      const scrollY = window.scrollY;
+      
+      // Debug: Log current scroll position
+      console.log("Scroll Y:", scrollY);
+      
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i];
         const element = document.getElementById(section);
         if (element) {
-          const rect = element.getBoundingClientRect();
-          if (rect.top <= headerHeight + 100) {
-            setActiveSection(section);
+          const elementTop = element.offsetTop - headerHeight;
+          const elementBottom = elementTop + element.offsetHeight;
+          
+          // Debug: Log section positions
+          console.log(`Section ${section}:`, { elementTop, elementBottom, scrollY });
+          
+          // Check if current scroll position is within this section
+          if (scrollY >= elementTop - 100 && scrollY < elementBottom - 100) {
+            if (activeSection !== section) {
+              setActiveSection(section);
+              console.log("Active section changed to:", section);
+            }
             break;
           }
+        } else {
+          console.log(`Section ${section} element not found`);
         }
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check initial position
+    // Add a small delay to ensure DOM is ready
+    const timer = setTimeout(() => {
+      window.addEventListener("scroll", handleScroll, { passive: true });
+      handleScroll(); // Check initial position
+    }, 100);
     
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [location.pathname]);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -106,7 +140,7 @@ export default function Navigation() {
           {/* Logo/Brand */}
           <button 
             onClick={scrollToTop}
-            className="text-xl font-bold text-neutral-800 dark:text-white hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors"
+            className="text-xl md:text-[26px] font-bold text-neutral-800 dark:text-white hover:text-neutral-600 dark:hover:text-neutral-300 transition-all duration-200 hover:border-b-2 hover:border-neutral-800 dark:hover:border-white font-headline"
           >
             Jamie Treyvaud
           </button>
@@ -115,31 +149,25 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("about")}
-              className={`text-sm font-medium transition-colors ${
-                isActive("/about")
-                  ? "text-neutral-800 dark:text-white border-b-2 border-neutral-800 dark:border-white"
-                  : "text-neutral-600 dark:text-neutral-300 hover:text-neutral-800 dark:hover:text-white"
-              }`}
+              className="text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:text-neutral-800 dark:hover:text-white hover:font-bold transition-all duration-200 hover:border-b-2 hover:border-neutral-800 dark:hover:border-white"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection("projects")}
-              className={`text-sm font-medium transition-colors ${
-                isActive("/case-studies")
-                  ? "text-neutral-800 dark:text-white border-b-2 border-neutral-800 dark:border-white"
-                  : "text-neutral-600 dark:text-neutral-300 hover:text-neutral-800 dark:hover:text-white"
-              }`}
+              className="text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:text-neutral-800 dark:hover:text-white hover:font-bold transition-all duration-200 hover:border-b-2 hover:border-neutral-800 dark:hover:border-white"
             >
               Case Studies
             </button>
             <button
+              onClick={() => window.location.href = "/resume"}
+              className="text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:text-neutral-800 dark:hover:text-white hover:font-bold transition-all duration-200 hover:border-b-2 hover:border-neutral-800 dark:hover:border-white"
+            >
+              Resume
+            </button>
+            <button
               onClick={() => scrollToSection("contact")}
-              className={`text-sm font-medium transition-colors ${
-                isActive("/contact")
-                  ? "text-neutral-800 dark:text-white border-b-2 border-neutral-800 dark:text-white"
-                  : "text-neutral-600 dark:text-neutral-300 hover:text-neutral-800 dark:hover:text-white"
-              }`}
+              className="text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:text-neutral-800 dark:hover:text-white hover:font-bold transition-all duration-200 hover:border-b-2 hover:border-neutral-800 dark:hover:border-white"
             >
               Contact
             </button>
@@ -186,31 +214,25 @@ export default function Navigation() {
             <div className="px-2 pt-2 pb-3 space-y-1">
               <button
                 onClick={() => scrollToSection("about")}
-                className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                  isActive("/about")
-                    ? "text-neutral-800 dark:text-white bg-neutral-100 dark:bg-neutral-800"
-                    : "text-neutral-600 dark:text-neutral-300 hover:text-neutral-800 dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800"
-                }`}
+                className="block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors text-neutral-600 dark:text-neutral-300 hover:text-neutral-800 dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800"
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection("projects")}
-                className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                  isActive("/case-studies")
-                    ? "text-neutral-800 dark:text-white bg-neutral-100 dark:bg-neutral-800"
-                    : "text-neutral-600 dark:text-neutral-300 hover:text-neutral-800 dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800"
-                }`}
+                className="block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors text-neutral-600 dark:text-neutral-300 hover:text-neutral-800 dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800"
               >
                 Case Studies
               </button>
               <button
+                onClick={() => window.location.href = "/resume"}
+                className="block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors text-neutral-600 dark:text-neutral-300 hover:text-neutral-800 dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800"
+              >
+                Resume
+              </button>
+              <button
                 onClick={() => scrollToSection("contact")}
-                className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                  isActive("/contact")
-                    ? "text-neutral-800 dark:text-white bg-neutral-100 dark:bg-neutral-800"
-                    : "text-neutral-600 dark:text-neutral-300 hover:text-neutral-800 dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800"
-                }`}
+                className="block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors text-neutral-600 dark:text-neutral-300 hover:text-neutral-800 dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800"
               >
                 Contact
               </button>

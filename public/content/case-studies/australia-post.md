@@ -19,6 +19,7 @@ link: https://www.figma.com/
 ## Context
 ---
 <br>
+
 When Telstra Purple was brought in to tackle the complex delivery ecosystem between Telstra and Australia Post, I knew we were facing one of those challenging multi-stakeholder scenarios that requires careful orchestration. The problem wasn't just about improving a single process—we were dealing with an intricate web of relationships involving Telstra, Australia Post, StarTrack, and Toll, where customers were caught in the middle of operational inefficiencies.
 
 The numbers told a stark story. With a DIFOT (Delivery In Full On Time) rate sitting at just 95.6% (falling short of agreed SLAs [Service Level Agreements]), the business was hemorrhaging $1-2M annually from damaged goods alone. Add to this the fraud detection gaps and poor customer experience across multiple touchpoints, and it became clear that we needed a comprehensive approach to understand where the real pain points lived across this complex delivery ecosystem.
@@ -28,6 +29,7 @@ Drawing on my experience leading discovery phases for large-scale transformation
 ## Outcome
 ---
 <br>
+
 The discovery phase delivered exactly what we hoped for—a clear roadmap of validated opportunities across five critical improvement areas. I guided the team through a systematic approach that revealed not just the obvious pain points, but the underlying systemic issues that were driving customer frustration.
 
 We identified streamlined approaches for claims process reform that would consolidate information pipelines and speed up dispute resolution. Our analysis of the DIFOT (Delivery In Full On Time) process revealed opportunities for enhanced forecasting and transparency that could bring performance back above SLA [Service Level Agreement] thresholds. The address validation work uncovered how standardizing databases and implementing early validation could prevent many delivery failures before they occurred.
@@ -42,27 +44,33 @@ What made this discovery particularly successful was how we moved beyond identif
 
 **Stage 1: Stakeholder Discovery**
 
-I made the strategic decision to conduct separate discovery workshops initially, having learned from previous complex stakeholder engagements that organizational perspectives can sometimes overshadow shared pain points when groups are combined too early. We spent dedicated time with both the Australia Post and Telstra teams, mapping their current workflows from each organization's unique vantage point.
+We made the strategic decision to conduct separate discovery workshops initially, having learned from previous complex stakeholder engagements that organizational perspectives can sometimes overshadow shared pain points when groups are combined too early. We spent dedicated time with both the Australia Post and Telstra teams, mapping their current workflows from each organization's unique vantage point.
 
 This approach allowed us to capture pain points that might have been diplomatically softened in joint sessions, while identifying the key personnel and process touchpoints that would be critical for any future solutions. My leadership during these sessions focused on creating safe spaces where team members could honestly discuss frustrations without feeling they were criticizing their partner organizations.
+
+![](/images/case-studies/auspost/AusPostDistro.png)
+* Parcels move down conveyor belts sorted by destination, where workers collect and stack them onto pallets for further transport at the Australia Post distribution centre.
 
 **Stage 2: Joint Analysis**
 
 Once we had a solid understanding of each stakeholder's perspective, I facilitated the combined workshop that brought both Telstra and Australia Post teams together. This is where the real magic happened—watching team members realize that their individual pain points were often symptoms of the same underlying system issues.
 
-Under my guidance, we synthesized the separate workflows into a unified end-to-end process map that revealed the handoff points where things typically went wrong. The collaborative validation process I led helped teams see beyond their organizational boundaries and identify opportunities for cross-functional improvements that would benefit everyone, especially the end customers.
+We synthesized the separate workflows into a unified end-to-end process map that revealed the handoff points where things typically went wrong. The collaborative validation process I led helped teams see beyond their organizational boundaries and identify opportunities for cross-functional improvements that would benefit everyone, especially the end customers.
 
 **Stage 3: Synthesis & Prioritization**
 
-Drawing on my years of experience translating research insights into actionable business recommendations, I led the team through a rigorous analysis phase. We highlighted the critical gaps in service delivery and developed a prioritization framework that balanced business impact against implementation feasibility.
+The team conducted a rigorous analysis phase, drawing on established research methodologies to translate insights into actionable business recommendations. This process highlighted critical gaps in service delivery and resulted in a prioritization framework that balanced business impact against implementation feasibility.  
 
-My approach to creating the roadmap ensured that stakeholders could see both immediate opportunities and longer-term strategic investments. This dual timeline approach has proven successful in my previous engagements, as it gives clients quick wins to build momentum while maintaining focus on transformational changes.
+The roadmap was structured to provide stakeholders with visibility into both immediate opportunities and longer-term strategic investments. This dual timeline approach delivers quick wins to build momentum while maintaining focus on transformational changes that drive sustained value.
 
 ## Final Research 
 ---
 <br>
 
 The discovery culminated in a comprehensive opportunity framework that I organized into clear priority tiers. The immediate quick wins included claims process review and consolidation, DIFOT process mapping improvements, and the Digital Airlock security enhancement that could be implemented with relatively minor technical changes.
+
+![](/images/case-studies/auspost/AusPostWorkflow.png)
+* This workflow outlines the end-to-end process for AusPost deliveries, showing how customer orders placed through the Telstra ordering portal move through Telstra’s order management system, Toll’s fulfillment, and AusPost’s logistics network across the first, middle, and last mile until final delivery or return handling.
 
 For strategic improvements, we identified address validation standardization using shared databases and real-time damage prevention systems that would require more significant investment but deliver substantial long-term value. The customer notification enhancements and contract driver compliance improvements rounded out a holistic approach to ecosystem-wide improvement.
 
