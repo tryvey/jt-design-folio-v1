@@ -210,6 +210,37 @@ button:focus-visible {
   51%, 100% { opacity: 0; }
 }
 
+/* Phone mockup styling - simplified */
+.custom-markdown-style img[src*="Marvel1.png"] {
+  max-width: 200px !important;
+  width: 200px !important;
+  height: auto;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 20px;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+/* Center the caption text under Marvel1.png */
+.custom-markdown-style img[src*="Marvel1.png"] + em {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  font-style: italic;
+  color: inherit;
+}
+
+/* Subtle floating animation */
+@keyframes subtle-float {
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-8px); 
+  }
+}
+
 
 
 .hero-markdown p {

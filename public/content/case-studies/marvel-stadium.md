@@ -20,6 +20,9 @@ link: https://www.figma.com/
 
 Marvel Stadium launched a comprehensive redesign of their companion app to fundamentally elevate the fan experience across every touchpoint of their venue journey. This digital transformation aligned closely with the stadium’s ambitious $225 million precinct upgrade, creating a cohesive ecosystem that bridges physical and digital experiences. The app serves as a central hub for ticketing, parking reservations, venue navigation, and immersive engagement features including live streaming, fan cam photography, dynamic promotional content, and streamlined food ordering capabilities. Leading this project, I guided my team through the complex challenge of delivering a reliable, cross-platform solution that would not only delight fans but also drive operational efficiency for venue partners and vendors.
 
+![](/images/case-studies/marvelstadium/Marvel1.png)
+*Marvel Stadium App - Mobile Interface Mockup*
+
 ### Outcome
 ---
 <br>
