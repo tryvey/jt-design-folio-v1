@@ -231,6 +231,18 @@ button:focus-visible {
   color: inherit;
 }
 
+/* Mobile modal optimizations */
+@media (max-width: 768px) {
+  .fixed.inset-0 {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  img[src*="Marvel1.png"] {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
 /* Subtle floating animation */
 @keyframes subtle-float {
   0%, 100% { 

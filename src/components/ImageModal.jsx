@@ -34,7 +34,7 @@ export default function ImageModal({ media, alt, isOpen, onClose }) {
       <div className="absolute inset-0 bg-black/60 backdrop-blur-md" />
       
       {/* Modal content */}
-      <div className="relative z-10 w-[95vw] md:w-[98vw] max-h-[98vh]">
+      <div className="relative z-10 w-[95vw] max-h-[95vh]">
         {/* Close button */}
         <button
           onClick={onClose}
@@ -63,7 +63,7 @@ export default function ImageModal({ media, alt, isOpen, onClose }) {
             <img
               src={media}
               alt={alt}
-              className="w-full h-auto max-h-[90vh] md:max-w-none md:object-scale-down object-contain rounded-lg shadow-2xl"
+              className="w-full h-auto max-h-[90vh] object-contain rounded-lg shadow-2xl"
               onClick={(e) => e.stopPropagation()} // Prevent closing when clicking image
             />
           )}
