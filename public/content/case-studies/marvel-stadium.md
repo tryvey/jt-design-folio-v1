@@ -46,19 +46,19 @@ In my role as Managing Consultant, I guided the design team to achieve substanti
 ---
 <br>
 
-**Unified Dashboard** The app opens to a comprehensive dashboard that serves as the central command center for the entire stadium experience, presenting upcoming events, parking access management, and curated fan experiences in an intuitive, scannable format that allows users to quickly access their most relevant information.
+**Unified Dashboard.** The app opens to a comprehensive dashboard that serves as the central command center for the entire stadium experience, presenting upcoming events, parking access management, and curated fan experiences in an intuitive, scannable format that allows users to quickly access their most relevant information.
 
-**Plan Your Visit** We designed streamlined booking flows that encompass transport coordination, parking reservations, detailed stadium mapping, and comprehensive accessibility features, creating a cohesive pre-visit planning experience that reduces uncertainty and builds anticipation for the event.
+**Plan Your Visit.** We designed streamlined booking flows that encompass transport coordination, parking reservations, detailed stadium mapping, and comprehensive accessibility features, creating a cohesive pre-visit planning experience that reduces uncertainty and builds anticipation for the event.
 
-**Bookings & Tickets** The ticketing system features secure car park reservations with locally cached QR codes and integrated payment receipts, ensuring users maintain access to their bookings even in areas with poor connectivity, such as underground parking structures.
+**Bookings & Tickets.** The ticketing system features secure car park reservations with locally cached QR codes and integrated payment receipts, ensuring users maintain access to their bookings even in areas with poor connectivity, such as underground parking structures.
 
-**Opt-In Preferences** We developed a transparent, user-friendly interface for marketing consent management that allows granular control over email and SMS communications, with clear visual indicators and easy modification options that build trust through transparency.
+**Opt-In Preferences.** We developed a transparent, user-friendly interface for marketing consent management that allows granular control over email and SMS communications, with clear visual indicators and easy modification options that build trust through transparency.
 
-**Fan Cam & Radio** Live audio streaming and event-day Fan Cam functionality are seamlessly integrated into the app experience, providing immersive engagement opportunities that connect users to the excitement and community atmosphere of live events.
+**Fan Cam & Radio.** Live audio streaming and event-day Fan Cam functionality are seamlessly integrated into the app experience, providing immersive engagement opportunities that connect users to the excitement and community atmosphere of live events.
 
-**Security Layer** Optional biometric authentication provides robust security while maintaining user convenience through touch-free access where device capabilities support it, creating a frictionless yet secure entry point to personal account information.
+**Security Layer.** Optional biometric authentication provides robust security while maintaining user convenience through touch-free access where device capabilities support it, creating a frictionless yet secure entry point to personal account information.
 
-**Responsive UI** Our responsive design system ensures fluid layouts across device sizes with particular attention to smaller screens, featuring thoughtfully adapted interactive elements and optimized user flows that maintain consistency and usability across both platform ecosystems.
+**Responsive UI.** Our responsive design system ensures fluid layouts across device sizes with particular attention to smaller screens, featuring thoughtfully adapted interactive elements and optimized user flows that maintain consistency and usability across both platform ecosystems.
 
 ### Learnings
 ---
