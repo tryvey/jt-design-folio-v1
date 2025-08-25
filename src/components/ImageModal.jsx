@@ -29,6 +29,10 @@ export default function ImageModal({ media, alt, isOpen, onClose }) {
     <div 
       className="fixed inset-0 z-50 flex items-center justify-center p-2 md:p-4"
       onClick={onClose}
+      style={{
+        WebkitOverflowScrolling: 'touch',
+        WebkitTransform: 'translateZ(0)'
+      }}
     >
       {/* Blurred background overlay */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-md" />
