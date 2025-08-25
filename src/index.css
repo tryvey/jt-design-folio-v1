@@ -185,8 +185,10 @@ button:focus-visible {
 .custom-markdown-style strong,
 .custom-markdown-style b {
   font-weight: 700 !important;
+  font-weight: bold !important;
   color: inherit;
   display: inline;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
 }
 
 /* Mobile-specific bold text optimization */
@@ -194,9 +196,23 @@ button:focus-visible {
   .custom-markdown-style strong,
   .custom-markdown-style b {
     font-weight: 700 !important;
+    font-weight: bold !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    -webkit-text-stroke: 0.1px;
+    text-shadow: 0 0 0 currentColor;
+  }
+}
+
+/* Chrome mobile specific bold text fixes */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .custom-markdown-style strong,
+  .custom-markdown-style b {
+    font-weight: 700 !important;
+    font-weight: bold !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
