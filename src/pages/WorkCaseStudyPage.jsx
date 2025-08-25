@@ -41,6 +41,29 @@ function CaseStudyPage({ file }) {
     setModalAlt(mediaAlt);
   };
 
+  // Marvel images array for navigation (only Marvel2 and Marvel3)
+  const marvelImages = [
+    {
+      src: "/images/case-studies/marvelstadium/Marvel2.png",
+      alt: "Events Overview"
+    },
+    {
+      src: "/images/case-studies/marvelstadium/Marvel3.png",
+      alt: "Parking Confirmation"
+    }
+  ];
+
+  // Function to handle Marvel image clicks with navigation
+  const handleMarvelImageClick = (index) => {
+    setModalMedia(marvelImages[index].src);
+    setModalAlt(marvelImages[index].alt);
+  };
+
+  // Function to check if current modal image is part of the Marvel navigation set
+  const isMarvelNavigationImage = (mediaSrc) => {
+    return marvelImages.some(img => img.src === mediaSrc);
+  };
+
   // Function to close modal
   const closeModal = () => {
     setModalMedia(null);
@@ -49,16 +72,90 @@ function CaseStudyPage({ file }) {
 
   // Custom components for ReactMarkdown to make images and videos clickable
   const components = {
-    img: ({ src, alt, ...props }) => (
-      <img
-        {...props}
-        src={src}
-        alt={alt}
-        className="cursor-pointer hover:opacity-90 transition-opacity rounded-lg shadow-md"
-        onClick={() => handleMediaClick(src, alt)}
-        style={{ maxWidth: '100%', height: 'auto' }}
-      />
-    ),
+    img: ({ src, alt, ...props }) => {
+      // Check if this is Marvel2 or Marvel3 to apply special styling
+      const isMarvelImage = src && (src.includes('Marvel2.png') || src.includes('Marvel3.png'));
+      
+      if (isMarvelImage) {
+        return (
+          <div className="marvel-image-group">
+            <img
+              {...props}
+              src={src}
+              alt={alt}
+              className="cursor-pointer hover:opacity-90 transition-opacity rounded-lg shadow-md"
+              onClick={() => handleMediaClick(src, alt)}
+              style={{ maxWidth: '100%', height: 'auto' }}
+            />
+          </div>
+        );
+      }
+      
+      return (
+        <img
+          {...props}
+          src={src}
+          alt={alt}
+          className="cursor-pointer hover:opacity-90 transition-opacity rounded-lg shadow-md"
+          onClick={() => handleMediaClick(src, alt)}
+          style={{ maxWidth: '100%', height: 'auto' }}
+        />
+      );
+    },
+    em: ({ children, ...props }) => {
+      // Check if this caption follows a Marvel image
+      const previousElement = props.node?.previousSibling;
+      const isMarvelCaption = previousElement && 
+        previousElement.tagName === 'div' && 
+        previousElement.className === 'marvel-image-group';
+      
+      if (isMarvelCaption) {
+        return (
+          <em className="marvel-caption" {...props}>
+            {children}
+          </em>
+        );
+      }
+      
+      return <em {...props}>{children}</em>;
+    },
+    h3: ({ children, ...props }) => {
+      // Check if this is the "Final Design" heading
+      if (children === "Final Design") {
+        return (
+          <>
+            <h3 {...props}>{children}</h3>
+            <hr className="my-4" />
+            <br />
+            {/* Insert Marvel images after horizontal rule */}
+            <div className="marvel-images-horizontal">
+              <div className="marvel-image-item">
+                <img
+                  src="/images/case-studies/marvelstadium/Marvel2.png"
+                  alt="Events Overview"
+                  className="cursor-pointer hover:opacity-90 transition-opacity rounded-lg shadow-md"
+                  onClick={() => handleMarvelImageClick(0)}
+                  style={{ maxWidth: '100%', height: 'auto' }}
+                />
+                <em style={{ margin: 0, padding: 0, marginTop: 0, marginBottom: 0 }}>Events Overview</em>
+              </div>
+              <div className="marvel-image-item">
+                <img
+                  src="/images/case-studies/marvelstadium/Marvel3.png"
+                  alt="Parking Confirmation"
+                  className="cursor-pointer hover:opacity-90 transition-opacity rounded-lg shadow-md"
+                  onClick={() => handleMarvelImageClick(1)}
+                  style={{ maxWidth: '100%', height: 'auto' }}
+                />
+                <em style={{ margin: 0, padding: 0, marginTop: 0, marginBottom: 0 }}>Parking Confirmation</em>
+              </div>
+            </div>
+          </>
+        );
+      }
+      
+      return <h3 {...props}>{children}</h3>;
+    },
     video: ({ src, ...props }) => (
       <video
         {...props}

@@ -47,11 +47,6 @@ We fostered a design process that emphasized close collaboration between design 
 Together, we implemented a rigorous testing methodology that included both prototype validation and early release testing conducted in authentic stadium environments. Our team managed the closed user group, which included stadium staff and regular attendees, extracting invaluable feedback on real-world performance scenarios and practical usability considerations that informed our final design refinements.
   
 ### Final Design
----
-<br>
-
-![](/images/case-studies/marvelstadium/Marvel2.png)
-*Events Overview*
 
 **Unified Dashboard**  
 The app opens to a comprehensive dashboard that serves as the central command center for the entire stadium experience, presenting upcoming events, parking access management, and curated fan experiences in an intuitive, scannable format that allows users to quickly access their most relevant information.

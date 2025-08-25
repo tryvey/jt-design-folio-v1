@@ -247,7 +247,8 @@ button:focus-visible {
 
 /* Phone mockup styling - simplified */
 .custom-markdown-style img[src*="Marvel1.png"],
-.custom-markdown-style img[src*="Marvel2.png"] {
+.custom-markdown-style img[src*="Marvel2.png"],
+.custom-markdown-style img[src*="Marvel3.png"] {
   max-width: 200px !important;
   width: 200px !important;
   height: auto;
@@ -258,14 +259,104 @@ button:focus-visible {
   filter: none !important;
 }
 
-/* Center the caption text under Marvel1.png and Marvel2.png */
+/* Center the caption text under Marvel1.png, Marvel2.png, and Marvel3.png */
 .custom-markdown-style img[src*="Marvel1.png"] + em,
-.custom-markdown-style img[src*="Marvel2.png"] + em {
+.custom-markdown-style img[src*="Marvel2.png"] + em,
+.custom-markdown-style img[src*="Marvel3.png"] + em {
   display: block;
   text-align: center;
   margin-top: 1rem;
   font-style: italic;
   color: inherit;
+}
+
+/* Horizontal stack layout for Marvel images */
+/* Custom horizontal layout container */
+.marvel-images-horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+/* Style the individual image items */
+.marvel-image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+/* Style the images within the items */
+.marvel-image-item img {
+  max-width: 200px !important;
+  width: 200px !important;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+/* Style the captions */
+.marvel-image-item em {
+  text-align: center;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-style: italic;
+  color: inherit;
+  width: 100%;
+  display: block;
+  line-height: 1.2;
+}
+
+/* More specific selector to override any conflicting styles */
+.marvel-images-horizontal .marvel-image-item em {
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Target the specific caption text */
+.marvel-image-item em:contains("Events Overview"),
+.marvel-image-item em:contains("Parking Confirmation") {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* CSS Reset for Marvel captions - override all possible spacing */
+.marvel-image-item em,
+.marvel-images-horizontal .marvel-image-item em,
+.custom-markdown-style .marvel-image-item em {
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Responsive behavior for mobile */
+@media (max-width: 768px) {
+  .marvel-images-horizontal {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .marvel-image-item {
+    flex: none;
+    width: 200px;
+  }
 }
 
 /* Mobile modal optimizations */
@@ -278,7 +369,8 @@ button:focus-visible {
 /* Safari mobile specific fixes */
 @supports (-webkit-touch-callout: none) {
   img[src*="Marvel1.png"],
-  img[src*="Marvel2.png"] {
+  img[src*="Marvel2.png"],
+  img[src*="Marvel3.png"] {
     -webkit-transform: none;
     transform: none;
     -webkit-backface-visibility: hidden;
@@ -288,7 +380,8 @@ button:focus-visible {
   }
   
   .custom-markdown-style img[src*="Marvel1.png"],
-  .custom-markdown-style img[src*="Marvel2.png"] {
+  .custom-markdown-style img[src*="Marvel2.png"],
+  .custom-markdown-style img[src*="Marvel3.png"] {
     -webkit-transform: none;
     transform: none;
     -webkit-backface-visibility: hidden;
@@ -333,4 +426,4 @@ button:focus-visible {
   font-weight: 600;
   display: block;
   margin-bottom: 0.5rem;
-}
+}/* CSS updated at Mon Aug 25 22:12:55 AEST 2025 */
