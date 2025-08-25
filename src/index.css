@@ -246,7 +246,8 @@ button:focus-visible {
 }
 
 /* Phone mockup styling - simplified */
-.custom-markdown-style img[src*="Marvel1.png"] {
+.custom-markdown-style img[src*="Marvel1.png"],
+.custom-markdown-style img[src*="Marvel2.png"] {
   max-width: 200px !important;
   width: 200px !important;
   height: auto;
@@ -257,8 +258,9 @@ button:focus-visible {
   filter: none !important;
 }
 
-/* Center the caption text under Marvel1.png */
-.custom-markdown-style img[src*="Marvel1.png"] + em {
+/* Center the caption text under Marvel1.png and Marvel2.png */
+.custom-markdown-style img[src*="Marvel1.png"] + em,
+.custom-markdown-style img[src*="Marvel2.png"] + em {
   display: block;
   text-align: center;
   margin-top: 1rem;
@@ -275,7 +277,8 @@ button:focus-visible {
 
 /* Safari mobile specific fixes */
 @supports (-webkit-touch-callout: none) {
-  img[src*="Marvel1.png"] {
+  img[src*="Marvel1.png"],
+  img[src*="Marvel2.png"] {
     -webkit-transform: none;
     transform: none;
     -webkit-backface-visibility: hidden;
@@ -284,7 +287,8 @@ button:focus-visible {
     perspective: 1000;
   }
   
-  .custom-markdown-style img[src*="Marvel1.png"] {
+  .custom-markdown-style img[src*="Marvel1.png"],
+  .custom-markdown-style img[src*="Marvel2.png"] {
     -webkit-transform: none;
     transform: none;
     -webkit-backface-visibility: hidden;
