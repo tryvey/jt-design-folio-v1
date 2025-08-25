@@ -1,7 +1,7 @@
-I lead cross-functional teams to design digital products that solve complex problems — so that organisations can innovate faster and users can achieve their goals with less friction. 
+I’m a UX Designer with over 10 years of experience creating digital products that make life easier for people and help organisations achieve their goals.
 
-I mentor designers and streamline workflows — so that great ideas become polished, impactful experiences without unnecessary roadblocks. 
+What excites me most about design is solving complex problems in simple, human ways. I enjoy working with cross-functional teams, mentoring designers, and streamlining processes so that ideas can move quickly from concept to impactful experiences.
 
-I align stakeholders around a shared vision — so that everyone moves in the same direction and the work delivers measurable business and user value. 
+My approach blends research-driven strategy with iterative design — every solution is shaped by real user insight and refined through feedback. I also place a strong focus on collaboration, aligning stakeholders around a shared vision so the work delivers value for both users and the business.
 
-I blend research-driven strategy with iterative design — so that every solution is grounded in insight and refined through feedback.
+Outside of the process, I’m driven by curiosity, creativity, and a genuine interest in how design can make everyday interactions more meaningful.

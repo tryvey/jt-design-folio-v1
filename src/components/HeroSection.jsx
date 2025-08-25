@@ -13,9 +13,9 @@ function HeroSection({ heroHeader, heroContent }) {
   // Job titles for typewriter animation
   const jobTitles = [
     "Product Design Lead",
-    "Visual Thinker",
     "Design Systems Specialist",
-    "Managing UX Consultant",
+    "AI & Vibe Coding Explorer",
+    "Experience Design Leader",
     "Plant Whisperer"
   ];
 
