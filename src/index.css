@@ -181,6 +181,25 @@ button:focus-visible {
   list-style-type: decimal;
 }
 
+/* Bold text styling for markdown - mobile optimized */
+.custom-markdown-style strong,
+.custom-markdown-style b {
+  font-weight: 700 !important;
+  color: inherit;
+  display: inline;
+}
+
+/* Mobile-specific bold text optimization */
+@media (max-width: 768px) {
+  .custom-markdown-style strong,
+  .custom-markdown-style b {
+    font-weight: 700 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+}
+
 /* Hero section markdown styling */
 .hero-markdown {
   text-align: center;
