@@ -41,7 +41,7 @@ function CaseStudyPage({ file }) {
     setModalAlt(mediaAlt);
   };
 
-  // Marvel images array for navigation (only Marvel2 and Marvel3)
+  // Marvel images array for navigation (Marvel2, Marvel3, Marvel4, and Marvel5)
   const marvelImages = [
     {
       src: "/images/case-studies/marvelstadium/Marvel2.png",
@@ -50,6 +50,14 @@ function CaseStudyPage({ file }) {
     {
       src: "/images/case-studies/marvelstadium/Marvel3.png",
       alt: "Parking Confirmation"
+    },
+    {
+      src: "/images/case-studies/marvelstadium/Marvel4.png",
+      alt: "Food & Beverage Outlets"
+    },
+    {
+      src: "/images/case-studies/marvelstadium/Marvel5.png",
+      alt: "Fan Cam"
     }
   ];
 
@@ -73,8 +81,8 @@ function CaseStudyPage({ file }) {
   // Custom components for ReactMarkdown to make images and videos clickable
   const components = {
     img: ({ src, alt, ...props }) => {
-      // Check if this is Marvel2 or Marvel3 to apply special styling
-      const isMarvelImage = src && (src.includes('Marvel2.png') || src.includes('Marvel3.png'));
+      // Check if this is Marvel2, Marvel3, Marvel4, or Marvel5 to apply special styling
+      const isMarvelImage = src && (src.includes('Marvel2.png') || src.includes('Marvel3.png') || src.includes('Marvel4.png') || src.includes('Marvel5.png'));
       
       if (isMarvelImage) {
         return (
@@ -148,6 +156,26 @@ function CaseStudyPage({ file }) {
                   style={{ maxWidth: '100%', height: 'auto' }}
                 />
                 <em style={{ margin: 0, padding: 0, marginTop: 0, marginBottom: 0 }}>Parking Confirmation</em>
+              </div>
+              <div className="marvel-image-item">
+                <img
+                  src="/images/case-studies/marvelstadium/Marvel4.png"
+                  alt="Food & Beverage Outlets"
+                  className="cursor-pointer hover:opacity-90 transition-opacity rounded-lg shadow-md"
+                  onClick={() => handleMarvelImageClick(2)}
+                  style={{ maxWidth: '100%', height: 'auto' }}
+                />
+                <em style={{ margin: 0, padding: 0, marginTop: 0, marginBottom: 0 }}>Food & Beverage Outlets</em>
+              </div>
+              <div className="marvel-image-item">
+                <img
+                  src="/images/case-studies/marvelstadium/Marvel5.png"
+                  alt="Fan Cam"
+                  className="cursor-pointer hover:opacity-90 transition-opacity rounded-lg shadow-md"
+                  onClick={() => handleMarvelImageClick(3)}
+                  style={{ maxWidth: '100%', height: 'auto' }}
+                />
+                <em style={{ margin: 0, padding: 0, marginTop: 0, marginBottom: 0 }}>Fan Cam</em>
               </div>
             </div>
           </>
