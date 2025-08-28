@@ -61,6 +61,9 @@ We synthesized the separate workflows into a unified end-to-end process map that
 
 The team conducted a rigorous analysis phase, drawing on established research methodologies to translate insights into actionable business recommendations. This process highlighted critical gaps in service delivery and resulted in a prioritization framework that balanced business impact against implementation feasibility.  
 
+![](/images/case-studies/auspost/AusPostEndtoEnd.png)
+* Miro Board mappiny out the User Journey of buying a phone from Telstra that gets delivered by Australia Post. Highlighting the touchpoints in the First, Middle and Last Mile.
+
 The roadmap was structured to provide stakeholders with visibility into both immediate opportunities and longer-term strategic investments. This dual timeline approach delivers quick wins to build momentum while maintaining focus on transformational changes that drive sustained value.
 
 ## Final Research 
