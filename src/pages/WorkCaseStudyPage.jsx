@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import SubpageHeader from "../components/SubpageHeader";
 import ImageModal from "../components/ImageModal";
 import { parseFrontmatter } from "../utils.jsx";
+import { trackCaseStudyView } from "../utils/analytics.js";
 
 // Mapping from slug to file path for case studies
 export const caseStudyFiles = {
@@ -31,6 +32,11 @@ function CaseStudyPage({ file }) {
       const { meta, body } = parseFrontmatter(text);
       setMeta(meta);
       setContent(body);
+      
+      // Track case study view
+      if (meta.title) {
+        trackCaseStudyView(meta.title);
+      }
     }
     fetchCaseStudy();
   }, [file]);
@@ -128,8 +134,8 @@ function CaseStudyPage({ file }) {
       return <em {...props}>{children}</em>;
     },
     h3: ({ children, ...props }) => {
-      // Check if this is the "Final Design" heading
-      if (children === "Final Design") {
+      // Check if this is the "Final Design" heading AND we're viewing the Marvel Stadium case study
+      if (children === "Final Design" && file.includes("marvel-stadium")) {
         return (
           <>
             <h3 {...props}>{children}</h3>

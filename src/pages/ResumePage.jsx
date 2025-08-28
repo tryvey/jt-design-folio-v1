@@ -3,12 +3,16 @@ import { useNavigate } from "react-router-dom";
 import { useTheme } from "../contexts/ThemeContext";
 import SubpageHeader from "../components/SubpageHeader";
 import Button from "../components/ui/Button";
+import { trackResumeDownload } from "../utils/analytics.js";
 
 function ResumePage() {
   const navigate = useNavigate();
   const { theme } = useTheme();
 
   const handleDownloadResume = () => {
+    // Track resume download
+    trackResumeDownload();
+    
     // Create a link element to trigger download
     const link = document.createElement("a");
     link.href = "/images/Jamie-Treyvaud-Resume.pdf";

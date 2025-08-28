@@ -14,4 +14,8 @@ export default defineConfig({
   },
   // Allow markdown files to be imported
   assetsInclude: ['**/*.md'],
+  // Handle Google Analytics ID replacement
+  define: {
+    'process.env.GA_MEASUREMENT_ID': JSON.stringify(process.env.VITE_GA_MEASUREMENT_ID || 'G-XXXXXXXXXX')
+  },
 })

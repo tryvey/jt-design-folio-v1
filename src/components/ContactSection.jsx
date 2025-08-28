@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { EMAILJS_CONFIG } from "../config/emailjs.js";
 import Button from "./ui/Button.jsx";
+import { trackFormSubmission } from "../utils/analytics.js";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -49,6 +50,9 @@ export default function ContactSection() {
     setSubmitStatus(null);
 
     try {
+      // Track form submission
+      trackFormSubmission('contact_form');
+
       // EmailJS template parameters
       const templateParams = {
         to_email: EMAILJS_CONFIG.TO_EMAIL,

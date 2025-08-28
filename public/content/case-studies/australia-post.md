@@ -53,7 +53,7 @@ This approach allowed us to capture pain points that might have been diplomatica
 
 **Stage 2: Joint Analysis**
 
-Once we had a solid understanding of each stakeholder's perspective, I facilitated the combined workshop that brought both Telstra and Australia Post teams together. This is where the real magic happened—watching team members realize that their individual pain points were often symptoms of the same underlying system issues.
+Once we had a solid understanding of each stakeholder's perspective, we facilitated the combined workshop that brought both Telstra and Australia Post teams together. This is where the real magic happened—watching team members realize that their individual pain points were often symptoms of the same underlying system issues.
 
 We synthesized the separate workflows into a unified end-to-end process map that revealed the handoff points where things typically went wrong. The collaborative validation process I led helped teams see beyond their organizational boundaries and identify opportunities for cross-functional improvements that would benefit everyone, especially the end customers.
 

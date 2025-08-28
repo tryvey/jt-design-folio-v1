@@ -2,13 +2,28 @@ import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import "./App.css";
 import "@fontsource/inter";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import WorkCaseStudyRoute from "./pages/WorkCaseStudyPage";
 import ResumePage from "./pages/ResumePage";
 import { getCaseStudiesFromFiles } from "./pages/HomePage";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Navigation from "./components/Navigation";
+import { trackPageView } from "./utils/analytics";
+
+// ============================================================
+// Page View Tracking Component
+// ============================================================
+function PageViewTracker() {
+  const location = useLocation();
+  
+  useEffect(() => {
+    // Track page view when location changes
+    trackPageView(location.pathname);
+  }, [location]);
+  
+  return null;
+}
 
 // ============================================================
 // Main App Component
@@ -43,6 +58,7 @@ function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
+        <PageViewTracker />
         <Navigation />
         <div className="pt-16">
           <Routes>
