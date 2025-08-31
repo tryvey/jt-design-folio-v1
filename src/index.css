@@ -434,4 +434,42 @@ button:focus-visible {
   font-weight: 600;
   display: block;
   margin-bottom: 0.5rem;
-}/* CSS updated at Mon Aug 25 22:12:55 AEST 2025 */
+}
+
+/* CSS updated at Mon Aug 25 22:12:55 AEST 2025 */
+
+/* YouTube Video Container Styles */
+.youtube-video-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 2rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+/* Dark mode styles for YouTube container */
+.dark .youtube-video-container {
+  background: #1f2937;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Simple YouTube video display fixes */
+iframe[src*="youtube"] {
+  width: 100% !important;
+  height: 400px !important;
+  border: none !important;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  min-height: 400px !important;
+}
+
+/* Basic iframe styling */
+iframe {
+  max-width: 100%;
+  height: auto;
+}

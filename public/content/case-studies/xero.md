@@ -21,6 +21,7 @@ link: https://www.figma.com/
 ---
 <br>
 
+
 **The Challenge**
 
 Xero had 3.49 million subscribers and A$1.3 billion in annual revenue, but was missing a massive opportunity with 10 million sole traders who found traditional accounting software too complex and irrelevant. Designing for the Gig Economy
@@ -36,6 +37,16 @@ The team designed Xero Go, a native mobile app for Android and iOS targeting sol
 ## Outcome
 ---
 <br>
+
+<div style="width: 100%; margin: 0 auto 2rem auto; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); background: #f8f9fa;">
+  <iframe 
+    src="https://www.youtube.com/embed/yTUT7p6VcM8" 
+    title="Xero Go App Case Study Video"
+    style="width: 100%; height: 400px; border: none;"
+    frameborder="0" 
+    allowfullscreen>
+  </iframe>
+</div>  
 
 Successfully launched in the UK market (September 2022) with positive reception, expanding Xero's addressable market to 2.5 million sole traders. The app enabled users to claim expenses, send invoices, submit tax returns, and track performance without learning traditional accounting principles.
 
@@ -57,7 +68,7 @@ I personally addressed Android fragmentation across Samsung OneUI, Huawei Harmon
 
 **Workflow & Testing**
 
-Drawing on my seven years at Telstra Purple, I established remote collaboration processes using Figma, Slack, and Zoom. I led extensive usability testing with Mixpanel analytics validation, iterating based on user feedback and deferring non-essential features.
+I established remote collaboration processes using Figma, Slack, and Zoom. I led extensive usability testing with Mixpanel analytics validation, iterating based on user feedback and deferring non-essential features.
 
 ## Final Design
 ---
