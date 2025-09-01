@@ -13,20 +13,31 @@ link: https://www.figma.com/
 
 **Partner:** Telstra Purple
 
-**Role:** Managing UX Design Consultant
+**Role:** Managing UX Design Consultant  
+
+<div style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); border: 1px solid #cbd5e1; border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
+
+**Summary**  
+
+*Ollie is a living Design System that unified OUA’s digital products, boosting design consistency, development speed, and user experience across their ecosystem. Built with thoughtful architecture, automation like Dark Mode, and collaborative governance, it empowers all teams to contribute and maintain a scalable, cohesive design infrastructure.*
+
+</div>
 
 ![](/images/case-studies/ou/OU-Bento.png)
 * Ollie Design System: Bento-style overview of Design System key benefits.
 
+
 ### Context
 ---
-<br>
+<br>  
+
 When Open Universities Australia approached us at Telstra Purple, they were facing a challenge many of our enterprise clients experience—fragmented digital experiences across their growing product ecosystem. Their teams were working in silos, creating inconsistent user interfaces and duplicating effort. As their Managing UX consultant, I knew we needed to establish a comprehensive Design System that would not only unify their visual language but fundamentally transform how their cross-functional teams collaborate. This wasn't just about creating pretty components; it was about building the digital infrastructure that would scale with OUA's future growth plans.
 
 ### Outcome
 ---
-<br>
-What we delivered was far more than a component library—we created **Ollie**, a living Design System that has fundamentally changed how OUA builds digital products. The impact has been remarkable: development velocity has improved, design consistency is now maintained across all touchpoints, and most importantly, their users enjoy a cohesive experience regardless of which OUA product they're using. The system has become the single source of truth that bridges the gap between design intention and technical implementation, something I've seen transform organisations throughout my seven years at Purple.
+<br>  
+
+What we delivered was far more than a component library—we created <strong>Ollie</strong>, a living Design System that has fundamentally changed how OUA builds digital products. The impact has been remarkable: development velocity has improved, design consistency is now maintained across all touchpoints, and most importantly, their users enjoy a cohesive experience regardless of which OUA product they're using. The system has become the single source of truth that bridges the gap between design intention and technical implementation, something I've seen transform organisations throughout my seven years at Purple.
   
 
 ### Key Stages
@@ -56,18 +67,20 @@ Finally, we established robust governance models and contribution guidelines. A 
   
 ### Final Design
 ---
-<br>
+<br>  
+
 Ollie represents everything I believe a modern design system should be: comprehensive yet flexible, rigorous yet approachable. Built in Figma with engineering-ready specifications, it embodies OUA's brand while maintaining the modularity needed for their diverse product portfolio.
 
 What I'm particularly proud of is how we've empowered OUA's teams. The clear documentation, intuitive tooling, and comprehensive onboarding materials mean that new team members can contribute meaningfully from day one. This democratisation of design quality is what makes a design system truly successful—it's not just used by designers, but embraced by the entire product organisation.
 
 ### Learnings
 ---
-<br>
+<br>  
+
 Throughout my career at Purple, I've learned that the most successful design systems are those that embrace continuous validation. Our "test as you go" methodology has proven invaluable—rather than building in isolation and hoping for adoption, we validate each component in real contexts as we create it.
 
 This approach creates powerful feedback loops between our design, development, and user research streams. Issues are caught early, reducing expensive rework and building confidence in the system's quality. More importantly, it ensures the system evolves based on actual user needs rather than theoretical requirements.
 
 Moving forward, I recommend OUA continues this iterative approach, treating Ollie as a living product that grows with their organisation. The foundation we've built together is strong, but the real magic happens when teams start contributing back to the system, creating a virtuous cycle of improvement and innovation.
 
-This collaborative, evidence-based approach to design systems is what I've seen work consistently across my Purple engagements—it creates systems that aren't just adopted, but genuinely loved by the teams that use them.
+This collaborative, evidence-based approach to design systems is what I've seen work consistently across my engagements—it creates systems that aren't just adopted, but genuinely loved by the teams that use them.

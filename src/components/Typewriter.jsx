@@ -109,7 +109,7 @@ const Typewriter = forwardRef(({ titles, speed = 100, delay = 2000 }, ref) => {
   }, [currentTitleIndex]);
 
   return (
-    <div className="typewriter-text text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-neutral-900 dark:text-white drop-shadow-lg text-center w-full px-4 font-headline">
+    <div className="typewriter-text text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-neutral-900 dark:text-white text-center w-full px-4 font-headline">
       {currentText}
       <span className="typewriter-cursor"></span>
     </div>

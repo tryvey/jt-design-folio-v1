@@ -15,6 +15,16 @@ link: https://www.figma.com/
 
 **Role:** Managing UX Design Consultant
 
+
+<div style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); border: 1px solid #cbd5e1; border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
+
+**Summary**  
+
+*Marvel Stadium’s companion app was redesigned to transform the live event journey, integrating ticketing, parking, navigation, food ordering, live radio, and fan engagement into a single seamless hub. Our team worked closely across research, design, and delivery to build a reliable, scalable cross-platform solution that elevates fan experiences while driving operational efficiency.*
+
+</div>
+
+### Context
 ---
 <br>
 

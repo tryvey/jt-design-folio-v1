@@ -17,6 +17,14 @@ link: https://www.figma.com/
 **Role:** Managing UX Design Consultant
 
 
+<div style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); border: 1px solid #cbd5e1; border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
+
+**Summary**  
+
+*Xero Go was designed to give sole traders simple, jargon-free tools for expenses, invoicing, tax, and performance tracking—opening up a new market of 2.5 million users for Xero. Our team delivered the cross-platform UX strategy, design system, and remote collaboration that made the app a success.*
+
+</div>
+
 ## Context
 ---
 <br>
@@ -56,19 +64,19 @@ Successfully launched in the UK market (September 2022) with positive reception,
 
 **Research & Strategy**
 
-I led comprehensive research identifying core user needs: expense claims, invoicing, tax preparation, and performance tracking. My team analyzed gig economy behaviors across platforms to inform our design strategy.
+The team conducted comprehensive research identifying core user needs: expense claims, invoicing, tax preparation, and performance tracking. My team analyzed gig economy behaviors across platforms to inform our design strategy.
 
 **Design System Development**
 
-I navigated complex challenges with 5+ different system references to create a unified design system for both platforms, establishing shared tokens, components, and clear handoff processes.
+I navigated complex challenges with 5+ different system references to contribute to the unified design system for both platforms, establishing shared tokens, components, and clear handoff processes.
 
 **Cross-Platform Design**
 
-I personally addressed Android fragmentation across Samsung OneUI, Huawei Harmony OS, and Google Pixel, adapting Material Design while maintaining Xero's brand consistency and ensuring feature parity across platforms.
+I tackled the challenges of designing for multiple platforms, balancing native guidelines with Xero’s brand identity to deliver a consistent experience and feature sets across devices.
 
 **Workflow & Testing**
 
-I established remote collaboration processes using Figma, Slack, and Zoom. I led extensive usability testing with Mixpanel analytics validation, iterating based on user feedback and deferring non-essential features.
+I established remote collaboration processes using Figma, Slack, and Zoom. I led extensive usability testing with analytics validation, iterating based on user feedback and deferring non-essential features.
 
 ## Final Design
 ---
@@ -84,7 +92,7 @@ The solution delivered streamlined invoicing, expense tracking, income managemen
 
 **Technical:** Android fragmentation demanded careful UI implementation planning. Large projects need structured file organization from the start.
 
-**Strategic:** Moving from MVP to Minimum Lovable Product thinking created more competitive solutions. Solving real user problems trumped feature completeness.
+**Strategic:** Moving from MVP (Minimum Viable Product) to MLP (Minimum Lovable Product) thinking created more competitive solutions. Solving real user problems trumped feature completeness.
 
 **Leadership:** My experience managing constant team changes reinforced the importance of clear role definitions, stakeholder alignment, and comprehensive documentation for smooth collaboration.
 

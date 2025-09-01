@@ -473,3 +473,42 @@ iframe {
   max-width: 100%;
   height: auto;
 }
+
+/* TLDR Section Styling */
+.custom-markdown-style div[style*="background: linear-gradient"] {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%) !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 12px !important;
+  padding: 1.5rem !important;
+  margin: 1.5rem 0 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Dark mode TLDR styling */
+.dark .custom-markdown-style div[style*="background: linear-gradient"] {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+  border: 1px solid #475569 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* TLDR text styling */
+.custom-markdown-style div[style*="background: linear-gradient"] strong {
+  color: #1e293b !important;
+  font-weight: 600 !important;
+  display: block !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.dark .custom-markdown-style div[style*="background: linear-gradient"] strong {
+  color: #f1f5f9 !important;
+}
+
+.custom-markdown-style div[style*="background: linear-gradient"] em {
+  color: #475569 !important;
+  font-style: italic !important;
+  line-height: 1.6 !important;
+}
+
+.dark .custom-markdown-style div[style*="background: linear-gradient"] em {
+  color: #cbd5e1 !important;
+}
