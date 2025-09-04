@@ -90,6 +90,9 @@ function CaseStudyPage({ file }) {
       // Check if this is Marvel2, Marvel3, Marvel4, or Marvel5 to apply special styling
       const isMarvelImage = src && (src.includes('Marvel2.png') || src.includes('Marvel3.png') || src.includes('Marvel4.png') || src.includes('Marvel5.png'));
       
+      // Check if this is OU-CourseCard.png to remove shadow
+      const isOUCourseCard = src && src.includes('OU-CourseCard.png');
+      
       if (isMarvelImage) {
         return (
           <div className="marvel-image-group">
@@ -105,12 +108,17 @@ function CaseStudyPage({ file }) {
         );
       }
       
+      // Apply different styling for OU-CourseCard (no shadow)
+      const imageClasses = isOUCourseCard 
+        ? "cursor-pointer hover:opacity-90 transition-opacity rounded-lg"
+        : "cursor-pointer hover:opacity-90 transition-opacity rounded-lg shadow-md";
+      
       return (
         <img
           {...props}
           src={src}
           alt={alt}
-          className="cursor-pointer hover:opacity-90 transition-opacity rounded-lg shadow-md"
+          className={imageClasses}
           onClick={() => handleMediaClick(src, alt)}
           style={{ maxWidth: '100%', height: 'auto' }}
         />

@@ -80,7 +80,11 @@ What I'm particularly proud of is how we've empowered OUA's teams. The clear doc
 ---
 <br>  
 
-Throughout my career at Purple, I've learned that the most successful design systems are those that embrace continuous validation. Our "test as you go" methodology has proven invaluable—rather than building in isolation and hoping for adoption, we validate each component in real contexts as we create it.
+Throughout my career at Purple, I've learned that the most successful design systems are those that embrace continuous validation. Our "test as you go" methodology has proven invaluable—rather than building in isolation and hoping for adoption, we validate each component in real contexts as we create it.  
+
+![](/images/case-studies/ou/OUA-TestFile.png)
+* The Ollie test file served as a sandbox for experimenting with Design System components without the risk of affecting production assets. It enabled us to validate how components behaved with Figma variables and design tokens applied, highlighting what worked seamlessly and where further refinement was needed.
+
 
 This approach creates powerful feedback loops between our design, development, and user research streams. Issues are caught early, reducing expensive rework and building confidence in the system's quality. More importantly, it ensures the system evolves based on actual user needs rather than theoretical requirements.
 
