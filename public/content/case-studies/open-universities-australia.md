@@ -69,7 +69,10 @@ Finally, we established robust governance models and contribution guidelines. A 
 ---
 <br>  
 
-Ollie represents everything I believe a modern design system should be: comprehensive yet flexible, rigorous yet approachable. Built in Figma with engineering-ready specifications, it embodies OUA's brand while maintaining the modularity needed for their diverse product portfolio.
+Ollie represents everything I believe a modern design system should be: comprehensive yet flexible, rigorous yet approachable. Built in Figma with engineering-ready specifications, it embodies OUA's brand while maintaining the modularity needed for their diverse product portfolio.  
+
+![](/images/case-studies/ou/OU-CourseCard.png)
+* The Course Card is a core component of the Design System. It was designed for maximum responsiveness and flexibility, adapting seamlessly across layouts and devices. Built with Figma variables and design tokens, it ensures consistent application of color, typography, and spacing while remaining easy to scale and maintain.
 
 What I'm particularly proud of is how we've empowered OUA's teams. The clear documentation, intuitive tooling, and comprehensive onboarding materials mean that new team members can contribute meaningfully from day one. This democratisation of design quality is what makes a design system truly successful—it's not just used by designers, but embraced by the entire product organisation.
 
