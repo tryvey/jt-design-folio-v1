@@ -28,7 +28,7 @@ function ResumePage() {
       <SubpageHeader scrollToTop={true} />
 
       {/* Main Content */}
-      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 pt-32">
+      <main className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-16 pt-32">
         {/* Resume Display */}
         <div className="bg-white dark:bg-neutral-800 rounded-2xl shadow-xl border border-neutral-200 dark:border-neutral-700 overflow-hidden">
           {/* Resume Image */}

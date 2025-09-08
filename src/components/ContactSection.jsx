@@ -93,8 +93,8 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="w-full bg-neutral-100 dark:bg-neutral-800 py-16 px-4 md:px-0 mx-auto">
-      <div className="max-w-4xl mx-auto">
+    <section id="contact" className="w-full bg-neutral-100 dark:bg-neutral-800 py-16 px-6 sm:px-8 lg:px-12 mx-auto">
+      <div className="max-w-5xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
           <h2 className="text-2xl font-bold mb-6 text-neutral-800 dark:text-neutral-100">

@@ -76,14 +76,14 @@ function HeroSection({ heroHeader, heroContent }) {
 
 
   return (
-    <section className="relative w-full h-[500px] sm:h-[550px] md:h-[600px] flex flex-col items-center justify-center bg-gradient-to-b from-neutral-50 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800 overflow-hidden">
+    <section className="relative w-full h-[500px] sm:h-[550px] md:h-[600px] flex flex-col items-center justify-center overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5 dark:opacity-10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(0,0,0,0.15)_1px,transparent_0)] dark:bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.15)_1px,transparent_0)] bg-[length:20px_20px]"></div>
       </div>
 
       {/* Main Content Container - Positioned to avoid image overlap */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col items-center justify-center text-center">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 h-full flex flex-col items-center justify-center text-center">
         
         {/* Content Wrapper - Constrained to upper portion of hero to avoid image overlap */}
         <div className="w-full max-w-4xl flex flex-col items-center justify-center" style={{ maxHeight: '70%' }}>
@@ -150,8 +150,6 @@ function HeroSection({ heroHeader, heroContent }) {
         />
       </div>
 
-      {/* Bottom Gradient Overlay */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-neutral-50 dark:from-neutral-900 to-transparent"></div>
     </section>
   );
 }

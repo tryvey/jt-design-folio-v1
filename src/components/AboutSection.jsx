@@ -3,8 +3,8 @@ import ReactMarkdown from "react-markdown";
 
 function AboutSection({ about }) {
   return (
-    <section id="about" className="w-full bg-neutral-100 dark:bg-neutral-800 py-16 px-6 md:px-0 mx-auto">
-      <div className="flex flex-col max-w-3xl mx-auto">
+    <section id="about" className="w-full bg-neutral-100 dark:bg-neutral-800 py-16 px-6 sm:px-8 lg:px-12 mx-auto">
+      <div className="flex flex-col max-w-4xl mx-auto">
         {/* Custom header that matches other sections */}
         <h2 className="text-2xl font-bold mb-8 text-neutral-800 dark:text-white text-center">
           About
