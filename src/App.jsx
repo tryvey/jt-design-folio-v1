@@ -60,7 +60,7 @@ function App() {
       <BrowserRouter>
         <PageViewTracker />
         <Navigation />
-        <div className="pt-20">
+        <div className="pt-24 sm:pt-20">
           <Routes>
             <Route
               path="/"
