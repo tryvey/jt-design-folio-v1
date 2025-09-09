@@ -137,7 +137,7 @@ export default function Navigation() {
     <nav className="fixed top-0 left-0 w-full z-50 p-4">
       <div className="max-w-6xl mx-auto">
         {/* Floating Navigation Container */}
-        <div className="bg-white/95 dark:bg-neutral-900/95 backdrop-blur-md rounded-2xl shadow-lg border border-neutral-200/50 dark:border-neutral-700/50 px-6 py-3">
+        <div className="bg-white/70 dark:bg-neutral-900/70 backdrop-blur-md rounded-full shadow-lg border border-neutral-200/50 dark:border-neutral-700/50 px-6 py-2 pr-2 md:pr-4">
           <div className="flex items-center justify-between">
             {/* Logo/Brand or Back Button */}
             {location.pathname === "/" ? (
@@ -215,13 +215,13 @@ export default function Navigation() {
             </div>
 
             {/* Theme Switcher and Mobile Menu */}
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-0.5 md:space-x-1">
               {/* Segmented Theme Control */}
-              <div className="relative flex bg-neutral-100 dark:bg-neutral-800 rounded-full p-1">
+              <div className="relative flex bg-neutral-100 dark:bg-neutral-800 rounded-full p-0.5 md:p-1">
                 {/* Animated Background */}
                 <div 
-                  className={`absolute top-1 bottom-1 w-10 h-10 bg-white dark:bg-neutral-900 rounded-full shadow-md border border-neutral-200 dark:border-neutral-700 transition-all duration-300 ease-in-out ${
-                    theme === 'light' ? 'left-1' : 'left-11'
+                  className={`absolute top-0.5 bottom-0.5 md:top-1 md:bottom-1 w-10 h-10 bg-white dark:bg-neutral-900 rounded-full shadow-md border border-neutral-200 dark:border-neutral-700 transition-all duration-300 ease-in-out ${
+                    theme === 'light' ? 'left-0.5 md:left-1' : 'left-10.5 md:left-11'
                   }`}
                 />
                 <button
