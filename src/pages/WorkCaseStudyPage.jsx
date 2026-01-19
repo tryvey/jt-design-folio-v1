@@ -215,7 +215,9 @@ function CaseStudyPage({ file }) {
   };
 
   return (
-    <section className="min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-white">
+    <section 
+      className="min-h-screen bg-neutral-50/30 dark:bg-neutral-950/30 text-neutral-900 dark:text-white"
+    >
       <div className="max-w-6xl mx-auto py-16 px-6 sm:px-8 lg:px-12">
         {meta.coverImage && (
           <img
@@ -271,7 +273,9 @@ export default function WorkCaseStudyRoute() {
     );
   } else {
     return (
-      <div className="min-h-screen flex items-center justify-center text-2xl text-neutral-800 dark:text-white bg-neutral-50 dark:bg-neutral-950">
+      <div 
+        className="min-h-screen flex items-center justify-center text-2xl text-neutral-800 dark:text-white bg-neutral-50/30 dark:bg-neutral-950/30"
+      >
         Case Study Not Found
       </div>
     );

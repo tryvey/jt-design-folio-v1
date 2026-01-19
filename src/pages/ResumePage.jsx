@@ -23,16 +23,16 @@ function ResumePage() {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-50 dark:bg-neutral-900 transition-colors duration-300">
+    <div className="min-h-screen bg-transparent transition-colors duration-300">
       {/* Use SubpageHeader with scrollToTop for Resume page */}
       <SubpageHeader scrollToTop={true} />
 
       {/* Main Content */}
       <main className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-16 pt-32">
         {/* Resume Display */}
-        <div className="bg-white dark:bg-neutral-800 rounded-2xl shadow-xl border border-neutral-200 dark:border-neutral-700 overflow-hidden">
+        <div className="bg-transparent rounded-2xl shadow-xl border border-neutral-200/50 dark:border-neutral-700/50 overflow-hidden">
           {/* Resume Image */}
-          <div className="w-full bg-neutral-100 dark:bg-neutral-700 flex items-center justify-center p-8">
+          <div className="w-full bg-neutral-100/50 dark:bg-neutral-700/50 flex items-center justify-center p-8">
             <img
               src="/images/Jamie-Treyvaud-Resume.png/Jamie-Treyvaud-Resume1page.png"
               alt="Jamie Treyvaud Resume"
@@ -41,7 +41,7 @@ function ResumePage() {
           </div>
 
           {/* Download Section */}
-          <div className="p-8 bg-gradient-to-r from-neutral-50 to-neutral-100 dark:from-neutral-800 dark:to-neutral-900">
+          <div className="p-8 bg-gradient-to-r from-neutral-50/50 to-neutral-100/50 dark:from-neutral-800/50 dark:to-neutral-900/50">
             <div className="text-center">
               <h2 className="text-xl font-semibold text-neutral-900 dark:text-white mb-4">
                 Download Resume

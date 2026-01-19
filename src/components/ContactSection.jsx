@@ -93,7 +93,14 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="w-full bg-neutral-100 dark:bg-neutral-800 py-16 px-6 sm:px-8 lg:px-12 mx-auto">
+    <section 
+      id="contact" 
+      className="w-full py-16 px-6 sm:px-8 lg:px-12 mx-auto bg-neutral-100/50 dark:bg-neutral-800/50" 
+      style={{
+        backdropFilter: 'blur(5px)',
+        WebkitBackdropFilter: 'blur(5px)'
+      }}
+    >
       <div className="max-w-5xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">

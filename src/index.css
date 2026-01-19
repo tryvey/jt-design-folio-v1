@@ -57,11 +57,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  --particle-bg: #f8fafc;
+  --particle-accent: rgba(15, 23, 42, 0.18);
+  --particle-link: rgba(59, 130, 246, 0.25);
 }
 
 /* Ensure fonts are properly loaded */
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--particle-bg);
+  min-height: 100vh;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,10 +78,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Dark mode styles */
 .dark {
   color-scheme: dark;
+  --particle-bg: #020617;
+  --particle-accent: rgba(226, 232, 240, 0.2);
+  --particle-link: rgba(56, 189, 248, 0.35);
 }
 
 .dark body {
-  background-color: #121212;
+  background-color: var(--particle-bg);
   color: #e5e5e5;
 }
 
@@ -86,7 +95,28 @@ html {
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
 
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+#particle-background {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background: var(--particle-bg);
+  transition: background 0.3s ease;
 }
 
 h1 {

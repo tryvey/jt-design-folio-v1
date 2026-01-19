@@ -5,7 +5,7 @@ function CaseStudiesGridSection({ caseStudies, onCaseStudyClick }) {
   return (
     <section
       id="projects"
-      className="w-full bg-neutral-50 dark:bg-neutral-950 py-16 px-6 sm:px-8 lg:px-12 mx-auto"
+      className="w-full bg-transparent py-16 px-6 sm:px-8 lg:px-12 mx-auto"
     >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl font-bold mb-8 text-neutral-800 dark:text-neutral-100 text-center">

@@ -115,23 +115,31 @@ function HeroSection({ heroHeader, heroContent }) {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="mt-auto mb-4 sm:mb-6 md:mb-8">
+        <div className="mt-auto mb-4 sm:mb-6 md:mb-8 translate-y-5">
           <a
             href="#projects"
-            className="flex flex-col items-center text-neutral-800 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors duration-300"
+            className="flex items-center gap-3 text-neutral-800 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors duration-300"
             onClick={handleScrollTo}
           >
             <svg
-              className="h-8 w-8 mb-2 animate-bounce text-current"
+              className="h-6 w-6 animate-bounce text-white"
               fill="currentColor"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
             </svg>
-            <span className="text-sm font-medium text-neutral-700 dark:text-neutral-400">
+            <span className="text-sm font-medium text-white dark:text-white drop-shadow-[0_1px_8px_rgba(0,0,0,0.35)]">
               Scroll to explore
             </span>
+            <svg
+              className="h-6 w-6 animate-bounce text-white"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+            </svg>
           </a>
         </div>
       </div>
@@ -149,7 +157,6 @@ function HeroSection({ heroHeader, heroContent }) {
         />
         
         {/* Bottom Gradient Overlay */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-neutral-50 dark:from-neutral-900 to-transparent pointer-events-none"></div>
       </div>
 
     </section>

@@ -46,7 +46,219 @@
 
   </head>
   <body>
+    <canvas id="particle-background" aria-hidden="true"></canvas>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      (() => {
+        const canvas = document.getElementById('particle-background');
+        if (!canvas) return;
+
+        const ctx = canvas.getContext('2d');
+        const pointer = { x: null, y: null, radius: 150 };
+        let particles = [];
+        let animationFrameId = null;
+        let colorPalette = { particle: 'rgba(255,255,255,0.6)', line: 'rgba(255,255,255,0.4)' };
+        let viewWidth = window.innerWidth;
+        let viewHeight = window.innerHeight;
+
+        const withAlpha = (color, alpha) => {
+          if (!color) return `rgba(255, 255, 255, ${alpha})`;
+          const normalized = color.trim();
+
+          if (normalized.startsWith('rgba')) {
+            const [r, g, b] = normalized.slice(5, -1).split(',').map((value, index) => (index < 3 ? value.trim() : null));
+            return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+          }
+
+          if (normalized.startsWith('rgb')) {
+            const [r, g, b] = normalized.slice(4, -1).split(',').map((value) => value.trim());
+            return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+          }
+
+          const hex = normalized.replace('#', '');
+          const bigint = parseInt(hex.length === 3 ? hex.split('').map((char) => char + char).join('') : hex, 16);
+          const r = (bigint >> 16) & 255;
+          const g = (bigint >> 8) & 255;
+          const b = bigint & 255;
+          return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+        };
+
+        const updateColorPalette = () => {
+          const styles = getComputedStyle(document.documentElement);
+          colorPalette = {
+            particle: styles.getPropertyValue('--particle-accent').trim() || 'rgba(255, 255, 255, 0.6)',
+            line: styles.getPropertyValue('--particle-link').trim() || 'rgba(255, 255, 255, 0.4)',
+          };
+        };
+
+        class Particle {
+          constructor() {
+            this.reset();
+            this.size = Math.random() * 1.8 + 0.4;
+            this.driftX = Math.random() * 0.4 - 0.2;
+            this.driftY = Math.random() * 0.4 - 0.2;
+          }
+
+          reset() {
+            this.baseX = Math.random() * viewWidth;
+            this.baseY = Math.random() * viewHeight;
+            this.x = this.baseX;
+            this.y = this.baseY;
+          }
+
+          update() {
+            this.baseX += this.driftX;
+            this.baseY += this.driftY;
+
+            if (this.baseX < 0) this.baseX = viewWidth;
+            if (this.baseX > viewWidth) this.baseX = 0;
+            if (this.baseY < 0) this.baseY = viewHeight;
+            if (this.baseY > viewHeight) this.baseY = 0;
+
+            if (pointer.x !== null && pointer.y !== null) {
+              const dx = pointer.x - this.x;
+              const dy = pointer.y - this.y;
+              const distance = Math.sqrt(dx * dx + dy * dy);
+
+              if (distance < pointer.radius) {
+                const force = (pointer.radius - distance) / pointer.radius;
+                const angle = Math.atan2(dy, dx);
+                this.x -= Math.cos(angle) * force * 6;
+                this.y -= Math.sin(angle) * force * 6;
+              } else {
+                this.x += (this.baseX - this.x) * 0.02;
+                this.y += (this.baseY - this.y) * 0.02;
+              }
+            } else {
+              this.x += (this.baseX - this.x) * 0.02;
+              this.y += (this.baseY - this.y) * 0.02;
+            }
+          }
+
+          draw() {
+            ctx.fillStyle = colorPalette.particle;
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fill();
+          }
+        }
+
+        const setCanvasSize = () => {
+          const dpr = window.devicePixelRatio || 1;
+          viewWidth = window.innerWidth;
+          viewHeight = window.innerHeight;
+          canvas.width = viewWidth * dpr;
+          canvas.height = viewHeight * dpr;
+          canvas.style.width = `${viewWidth}px`;
+          canvas.style.height = `${viewHeight}px`;
+          ctx.setTransform(1, 0, 0, 1, 0, 0);
+          ctx.scale(dpr, dpr);
+          pointer.radius = viewWidth < 768 ? 120 : 160;
+        };
+
+        const initParticles = () => {
+          const count = viewWidth < 768 ? 80 : 150;
+          particles = Array.from({ length: count }, () => new Particle());
+        };
+
+        const connectParticles = () => {
+          const threshold = 120;
+          for (let i = 0; i < particles.length; i += 1) {
+            for (let j = i + 1; j < particles.length; j += 1) {
+              const dx = particles[i].x - particles[j].x;
+              const dy = particles[i].y - particles[j].y;
+              const distance = Math.sqrt(dx * dx + dy * dy);
+
+              if (distance < threshold) {
+                const opacity = (1 - distance / threshold) * 0.5;
+                ctx.strokeStyle = withAlpha(colorPalette.line, opacity);
+                ctx.lineWidth = 0.6;
+                ctx.beginPath();
+                ctx.moveTo(particles[i].x, particles[i].y);
+                ctx.lineTo(particles[j].x, particles[j].y);
+                ctx.stroke();
+              }
+            }
+          }
+        };
+
+        const drawPointerNode = () => {
+          if (pointer.x === null || pointer.y === null) return;
+          ctx.fillStyle = withAlpha(colorPalette.line, 0.9);
+          ctx.beginPath();
+          ctx.arc(pointer.x, pointer.y, 3.5, 0, Math.PI * 2);
+          ctx.fill();
+        };
+
+        const animate = () => {
+          ctx.clearRect(0, 0, viewWidth, viewHeight);
+          particles.forEach((particle) => {
+            particle.update();
+            particle.draw();
+          });
+          connectParticles();
+          drawPointerNode();
+          animationFrameId = requestAnimationFrame(animate);
+        };
+
+        const handleResize = () => {
+          cancelAnimationFrame(animationFrameId);
+          setCanvasSize();
+          initParticles();
+          animate();
+        };
+
+        const init = () => {
+          updateColorPalette();
+          setCanvasSize();
+          initParticles();
+          animate();
+
+          window.addEventListener('resize', handleResize);
+          window.addEventListener('mousemove', (event) => {
+            pointer.x = event.clientX;
+            pointer.y = event.clientY;
+          });
+
+          window.addEventListener('mouseleave', () => {
+            pointer.x = null;
+            pointer.y = null;
+          });
+
+          window.addEventListener('touchmove', (event) => {
+            if (event.touches.length > 0) {
+              pointer.x = event.touches[0].clientX;
+              pointer.y = event.touches[0].clientY;
+            }
+          });
+
+          window.addEventListener('touchend', () => {
+            pointer.x = null;
+            pointer.y = null;
+          });
+
+          document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+              cancelAnimationFrame(animationFrameId);
+              animationFrameId = null;
+            } else if (!animationFrameId) {
+              animate();
+            }
+          });
+
+          const themeObserver = new MutationObserver(() => {
+            updateColorPalette();
+          });
+          themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+        };
+
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+          init();
+        } else {
+          window.addEventListener('DOMContentLoaded', init, { once: true });
+        }
+      })();
+    </script>
   </body>
 </html>
