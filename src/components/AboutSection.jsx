@@ -25,7 +25,7 @@ function AboutSection({ about }) {
               <img
                 src="/images/JTAVP.png"
                 alt="Jamie wearing Apple Vision Pro"
-                className="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]"
+                className="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.06]"
                 loading="lazy"
               />
             </div>
