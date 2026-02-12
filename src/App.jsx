@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import WorkCaseStudyRoute from "./pages/WorkCaseStudyPage";
 import ResumePage from "./pages/ResumePage";
+import ProjectsPage from "./pages/ProjectsPage";
 import { getCaseStudiesFromFiles } from "./pages/HomePage";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Navigation from "./components/Navigation";
@@ -80,6 +81,10 @@ function App() {
             <Route
               path="/resume"
               element={<ResumePage />}
+            />
+            <Route
+              path="/projects"
+              element={<ProjectsPage />}
             />
           </Routes>
         </div>
