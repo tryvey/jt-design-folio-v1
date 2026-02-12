@@ -23,7 +23,7 @@ function AboutSection({ about }) {
           <div className="w-full h-full min-h-[280px] md:min-h-0">
             <div className="group relative w-full h-full overflow-hidden rounded-lg border border-neutral-300/60 dark:border-neutral-600/60 bg-neutral-200 dark:bg-neutral-700">
               <img
-                src="/images/about-visionpro.png"
+                src="/images/JTAVP.png"
                 alt="Jamie wearing Apple Vision Pro"
                 className="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]"
                 loading="lazy"
