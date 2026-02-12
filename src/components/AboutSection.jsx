@@ -19,10 +19,15 @@ function AboutSection({ about }) {
         
         {/* Two Column Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-stretch">
-          {/* Left Column - Image Placeholder */}
-          <div className="w-full h-full">
-            <div className="w-full h-full bg-neutral-200 dark:bg-neutral-700 rounded-lg flex items-center justify-center border-2 border-dashed border-neutral-300 dark:border-neutral-600">
-              <span className="text-neutral-400 dark:text-neutral-500 text-sm">Image Placeholder</span>
+          {/* Left Column - Image */}
+          <div className="w-full h-full min-h-[280px] md:min-h-0">
+            <div className="group relative w-full h-full overflow-hidden rounded-lg border border-neutral-300/60 dark:border-neutral-600/60 bg-neutral-200 dark:bg-neutral-700">
+              <img
+                src="/images/about-visionpro.png"
+                alt="Jamie wearing Apple Vision Pro"
+                className="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]"
+                loading="lazy"
+              />
             </div>
           </div>
           
